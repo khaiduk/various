@@ -1,0 +1,93 @@
+\hypertarget{class_main_window}{
+\section{MainWindow Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+}
+
+
+Główne okno programu.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.h$>$}
+
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a0a78365a1e91551a446e8fa9c8c313dd}{dodajUlubiony} (std::wstring s)
+\begin{DoxyCompactList}\small\item\em Slot, który dodaje nową akcje do Ulubionych. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a190d6b2d07e5acf306eb30f35efc4781}{usunUlubione} (std::wstring szukany)
+\begin{DoxyCompactList}\small\item\em Slot, usuwający ulubiony. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{MainWindow} (QWidget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy. Dodatkowo tworzy większość połączeń między sygnałami, a slotami. \item\end{DoxyCompactList}\item 
+\hypertarget{class_main_window_ae3d7a4598609a86e8bd317c0d85c4495}{
+void \hyperlink{class_main_window_ae3d7a4598609a86e8bd317c0d85c4495}{show} ()}
+\label{class_main_window_ae3d7a4598609a86e8bd317c0d85c4495}
+
+\begin{DoxyCompactList}\small\item\em Uruchamia metodę z klasy bazowej wyswietlającą okno oraz uruchamia metodę tworzącą menu i otwierającą folder startowy. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Główne okno programu. Klasa będąca głównym oknem programu. Zawiera również instancje klas pomocniczych takich jak \hyperlink{class_file_system_controller}{FileSystemController}, przetrzymywane pomocniczo menuUlubione celem łatwiejszej aktualizcji tego menu. Dziedziczy po klasie QMainWindow. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\subsubsection[{MainWindow}]{\setlength{\rightskip}{0pt plus 5cm}MainWindow::MainWindow (
+\begin{DoxyParamCaption}
+\item[{QWidget $\ast$}]{ parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+
+
+Konstruktor klasy. Dodatkowo tworzy większość połączeń między sygnałami, a slotami. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rodzic}]tego obiektu \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_window_a0a78365a1e91551a446e8fa9c8c313dd}{
+\index{MainWindow@{MainWindow}!dodajUlubiony@{dodajUlubiony}}
+\index{dodajUlubiony@{dodajUlubiony}!MainWindow@{MainWindow}}
+\subsubsection[{dodajUlubiony}]{\setlength{\rightskip}{0pt plus 5cm}void MainWindow::dodajUlubiony (
+\begin{DoxyParamCaption}
+\item[{std::wstring}]{ s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_main_window_a0a78365a1e91551a446e8fa9c8c313dd}
+
+
+Slot, który dodaje nową akcje do Ulubionych. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nazwa}]tworzonego ulubionego\end{DoxyParams}
+Dodaje akcję do menuUlubione o nazwie przekazanej w parametrze i ustawia to menu jako wyświetlane dla przycisku BUlubione. Ponadto tworzy połączenie sygnału triggered utworzonej akcji menu ze slotem w niej się znajdującym, aby ten slot mógł nadać sygnał z dodatkowym parametrem go identyfikującym. Następnie tworzy połączenie w.w. sygnału z parametrem ze slotem znajdującym się w fsystem, celem wykonania odpowiedniej funkcji (np. dodanie nowego ulubionego, wybranie ulubionego, usuniecie itd.). \hypertarget{class_main_window_a190d6b2d07e5acf306eb30f35efc4781}{
+\index{MainWindow@{MainWindow}!usunUlubione@{usunUlubione}}
+\index{usunUlubione@{usunUlubione}!MainWindow@{MainWindow}}
+\subsubsection[{usunUlubione}]{\setlength{\rightskip}{0pt plus 5cm}void MainWindow::usunUlubione (
+\begin{DoxyParamCaption}
+\item[{std::wstring}]{ szukany}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_main_window_a190d6b2d07e5acf306eb30f35efc4781}
+
+
+Slot, usuwający ulubiony. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nazwa}]usuwanego ulubionego\end{DoxyParams}
+Usuwa akcję z menuUlubione. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+mainwindow.h\item 
+mainwindow.cpp\end{DoxyCompactItemize}

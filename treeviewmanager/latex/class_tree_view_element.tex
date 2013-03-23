@@ -1,0 +1,191 @@
+\hypertarget{class_tree_view_element}{
+\section{TreeViewElement Class Reference}
+\label{class_tree_view_element}\index{TreeViewElement@{TreeViewElement}}
+}
+
+
+Pojedynczy element widoku drzewa.  
+
+
+
+
+{\ttfamily \#include $<$treeviewelement.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_tree_view_element_a5253fdcb86d28b2545214d4d5e47af2c}{HighlightStyle} \{ {\bfseries inactive}, 
+{\bfseries active}, 
+{\bfseries current}, 
+{\bfseries selected}
+ \}
+\begin{DoxyCompactList}\small\item\em sposób podświetlania elementu \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tree_view_element_a0c6ab013ce3603e8b6989f74ed7d0d88}{
+\hyperlink{class_tree_view_element_a0c6ab013ce3603e8b6989f74ed7d0d88}{TreeViewElement} ()}
+\label{class_tree_view_element_a0c6ab013ce3603e8b6989f74ed7d0d88}
+
+\begin{DoxyCompactList}\small\item\em Tworzy element do korzenia -\/ wszystkich dysków. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_element_a0a8c5e5bdc31b1623e454d429083ffd6}{
+\hyperlink{class_tree_view_element_a0a8c5e5bdc31b1623e454d429083ffd6}{TreeViewElement} (const FileSystem::Path \&path, int depth=0)}
+\label{class_tree_view_element_a0a8c5e5bdc31b1623e454d429083ffd6}
+
+\begin{DoxyCompactList}\small\item\em Tworzy element do obiektu o ścieżce path. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_tree_view_element_abfc0297da8320d17fcf9876f1935167c}{draw} (QPainter \&painter, \hyperlink{class_tree_view_style}{TreeViewStyle} \&style, const QRect \&rect, const QRect \&view, const int depth)
+\item 
+\hypertarget{class_tree_view_element_af19b1a190604e2152f255955d3ff31d4}{
+void \hyperlink{class_tree_view_element_af19b1a190604e2152f255955d3ff31d4}{setHighlight} (\hyperlink{class_tree_view_element_a5253fdcb86d28b2545214d4d5e47af2c}{HighlightStyle} hightlight)}
+\label{class_tree_view_element_af19b1a190604e2152f255955d3ff31d4}
+
+\begin{DoxyCompactList}\small\item\em Ustawia sposób podświetlania. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_element_aebb598264309c8ca12e85a32b9efac4c}{
+void \hyperlink{class_tree_view_element_aebb598264309c8ca12e85a32b9efac4c}{resetHighlight} ()}
+\label{class_tree_view_element_aebb598264309c8ca12e85a32b9efac4c}
+
+\begin{DoxyCompactList}\small\item\em Kasuje podświetlanie. \item\end{DoxyCompactList}\item 
+\hyperlink{class_tree_view_element}{TreeViewElement} $\ast$ \hyperlink{class_tree_view_element_acb6765cd0b22b6a0373003861fbee380}{getUnder} (QPoint p, int depth)
+\item 
+\hyperlink{class_tree_view_element}{TreeViewElement} $\ast$ \hyperlink{class_tree_view_element_a660573381cd4c76ba7c8ff91df904beb}{getSub} (FileSystem::Path path)
+\item 
+\hypertarget{class_tree_view_element_a6993a9dd942db72aa8bc5c0c8286ad95}{
+FileSystem::Path \hyperlink{class_tree_view_element_a6993a9dd942db72aa8bc5c0c8286ad95}{getPath} ()}
+\label{class_tree_view_element_a6993a9dd942db72aa8bc5c0c8286ad95}
+
+\begin{DoxyCompactList}\small\item\em Zwraca ścieżkę do skojażonego elementu systemu plików. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_element_af4719f3d6eb6966b12cc559aad24d150}{
+QRect \hyperlink{class_tree_view_element_af4719f3d6eb6966b12cc559aad24d150}{getCurrentRect} ()}
+\label{class_tree_view_element_af4719f3d6eb6966b12cc559aad24d150}
+
+\begin{DoxyCompactList}\small\item\em Zwraca bieżące położenie względem widoku. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_element_ae4d3cc1c8305d138b722134a0be75945}{
+\hyperlink{class_tree_view_element}{TreeViewElement} $\ast$ \hyperlink{class_tree_view_element_ae4d3cc1c8305d138b722134a0be75945}{getParent} ()}
+\label{class_tree_view_element_ae4d3cc1c8305d138b722134a0be75945}
+
+\begin{DoxyCompactList}\small\item\em Zwraca element nadrzędny. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_tree_view_element_aa4b02b8bdf1c2f300c379badfaa46eb2}{fillToRect} (QRectF \&root, const QRect \&view) const 
+\item 
+\hypertarget{class_tree_view_element_aa7b3e02f2ddc30b21b823a526c54649c}{
+void \hyperlink{class_tree_view_element_aa7b3e02f2ddc30b21b823a526c54649c}{loadContents} ()}
+\label{class_tree_view_element_aa7b3e02f2ddc30b21b823a526c54649c}
+
+\begin{DoxyCompactList}\small\item\em Ładuje zawartość folderu. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tree_view_element_a41f61e290696e0f7e6d5b49c1946c2f4}{
+void \hyperlink{class_tree_view_element_a41f61e290696e0f7e6d5b49c1946c2f4}{placeContents} ()}
+\label{class_tree_view_element_a41f61e290696e0f7e6d5b49c1946c2f4}
+
+\begin{DoxyCompactList}\small\item\em Rozmieszcza zawartość elementu. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tree_view_element_a6ea6ed383cb22e6adccf4343235e661b}{
+int \hyperlink{class_tree_view_element_a6ea6ed383cb22e6adccf4343235e661b}{\_\-depth}}
+\label{class_tree_view_element_a6ea6ed383cb22e6adccf4343235e661b}
+
+\begin{DoxyCompactList}\small\item\em Głębokość względem korzenia. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_element_a2b7c8cbe571a71f6aca6788f85e0e370}{
+\hyperlink{class_tree_view_element_a5253fdcb86d28b2545214d4d5e47af2c}{HighlightStyle} \hyperlink{class_tree_view_element_a2b7c8cbe571a71f6aca6788f85e0e370}{\_\-highlight}}
+\label{class_tree_view_element_a2b7c8cbe571a71f6aca6788f85e0e370}
+
+\begin{DoxyCompactList}\small\item\em Sposób wyświetlania. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_element_ab4a8438a9c84e5eb4f45c31194bb24dd}{
+QRect \hyperlink{class_tree_view_element_ab4a8438a9c84e5eb4f45c31194bb24dd}{\_\-currentRect}}
+\label{class_tree_view_element_ab4a8438a9c84e5eb4f45c31194bb24dd}
+
+\begin{DoxyCompactList}\small\item\em Położenie względem widoku. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_element_ac29c214e7418d303ad7599f637d90b56}{
+QRectF \hyperlink{class_tree_view_element_ac29c214e7418d303ad7599f637d90b56}{\_\-rect}}
+\label{class_tree_view_element_ac29c214e7418d303ad7599f637d90b56}
+
+\begin{DoxyCompactList}\small\item\em Względne położenie w stosunku do obiektu bezpośrednio nadrzędnego. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_element_a9c3568bdc2697e608d0e20c767a4877b}{
+FileSystem::Element $\ast$ \hyperlink{class_tree_view_element_a9c3568bdc2697e608d0e20c767a4877b}{\_\-element}}
+\label{class_tree_view_element_a9c3568bdc2697e608d0e20c767a4877b}
+
+\begin{DoxyCompactList}\small\item\em Wskaźnik do skojarzonego elementu systemu plików. \item\end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_tree_view_element}{TreeViewElement} $\ast$ $>$ \hyperlink{class_tree_view_element_aa617b10a5c826119ed53c84bb829aaf5}{\_\-contents}
+\item 
+\hypertarget{class_tree_view_element_aebc63a226e57b45a351427d51d95552f}{
+\hyperlink{class_tree_view_element}{TreeViewElement} $\ast$ \hyperlink{class_tree_view_element_aebc63a226e57b45a351427d51d95552f}{\_\-parent}}
+\label{class_tree_view_element_aebc63a226e57b45a351427d51d95552f}
+
+\begin{DoxyCompactList}\small\item\em Element rodzica. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_element_a88aee40fc77e1d5f0c5ca5deb919b303}{
+bool \hyperlink{class_tree_view_element_a88aee40fc77e1d5f0c5ca5deb919b303}{\_\-loaded}}
+\label{class_tree_view_element_a88aee40fc77e1d5f0c5ca5deb919b303}
+
+\begin{DoxyCompactList}\small\item\em true gdy cała zawartość jest załadowana \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tree_view_element_a1e116f4ac91d0a1b41d323b0601ca352}{
+class {\bfseries TreeViewContentLoader}}
+\label{class_tree_view_element_a1e116f4ac91d0a1b41d323b0601ca352}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pojedynczy element widoku drzewa. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tree_view_element_abfc0297da8320d17fcf9876f1935167c}{
+\index{TreeViewElement@{TreeViewElement}!draw@{draw}}
+\index{draw@{draw}!TreeViewElement@{TreeViewElement}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void TreeViewElement::draw (
+\begin{DoxyParamCaption}
+\item[{QPainter \&}]{ painter, }
+\item[{{\bf TreeViewStyle} \&}]{ style, }
+\item[{const QRect \&}]{ rect, }
+\item[{const QRect \&}]{ view, }
+\item[{const int}]{ depth}
+\end{DoxyParamCaption}
+)}}
+\label{class_tree_view_element_abfc0297da8320d17fcf9876f1935167c}
+Rysuje element painter -\/ obiekt QPainter za pomocą którego będzie rysowany element style -\/ styl wyświetlania elementu rect -\/ pozycja obiektu bezpośrednio nadrzędnego view -\/ pozycja widoku depth -\/ głębokość wyświetlania \hypertarget{class_tree_view_element_aa4b02b8bdf1c2f300c379badfaa46eb2}{
+\index{TreeViewElement@{TreeViewElement}!fillToRect@{fillToRect}}
+\index{fillToRect@{fillToRect}!TreeViewElement@{TreeViewElement}}
+\subsubsection[{fillToRect}]{\setlength{\rightskip}{0pt plus 5cm}void TreeViewElement::fillToRect (
+\begin{DoxyParamCaption}
+\item[{QRectF \&}]{ root, }
+\item[{const QRect \&}]{ view}
+\end{DoxyParamCaption}
+) const}}
+\label{class_tree_view_element_aa4b02b8bdf1c2f300c379badfaa46eb2}
+Wypełnia dany element do okna root -\/ pozycja korzenia -\/ ulega zmianie view -\/ pozycja widoku \hypertarget{class_tree_view_element_a660573381cd4c76ba7c8ff91df904beb}{
+\index{TreeViewElement@{TreeViewElement}!getSub@{getSub}}
+\index{getSub@{getSub}!TreeViewElement@{TreeViewElement}}
+\subsubsection[{getSub}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TreeViewElement} $\ast$ TreeViewElement::getSub (
+\begin{DoxyParamCaption}
+\item[{FileSystem::Path}]{ path}
+\end{DoxyParamCaption}
+)}}
+\label{class_tree_view_element_a660573381cd4c76ba7c8ff91df904beb}
+Zwraca wskaźnik do podelementu o danej scieżca Jeśli taki element nie istnieje -\/ zwraca null \hypertarget{class_tree_view_element_acb6765cd0b22b6a0373003861fbee380}{
+\index{TreeViewElement@{TreeViewElement}!getUnder@{getUnder}}
+\index{getUnder@{getUnder}!TreeViewElement@{TreeViewElement}}
+\subsubsection[{getUnder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TreeViewElement} $\ast$ TreeViewElement::getUnder (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{ p, }
+\item[{int}]{ depth}
+\end{DoxyParamCaption}
+)}}
+\label{class_tree_view_element_acb6765cd0b22b6a0373003861fbee380}
+Zwraca wskaźnik do elementu pod punktem p, jeśli takiego nie ma -\/ zwaca NULL p -\/ punkt w układzie widoku depth -\/ maksymalna glębokość względna 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_tree_view_element_aa617b10a5c826119ed53c84bb829aaf5}{
+\index{TreeViewElement@{TreeViewElement}!\_\-contents@{\_\-contents}}
+\index{\_\-contents@{\_\-contents}!TreeViewElement@{TreeViewElement}}
+\subsubsection[{\_\-contents}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf TreeViewElement}$\ast$$>$ {\bf TreeViewElement::\_\-contents}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_tree_view_element_aa617b10a5c826119ed53c84bb829aaf5}
+Podelementy jeżeli element nie reprezentuje folderu -\/ pozostaje puste 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+treeviewelement.h\item 
+treeviewelement.cpp\end{DoxyCompactItemize}

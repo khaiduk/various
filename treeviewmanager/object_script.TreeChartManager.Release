@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\filesystemcontroller.o
+./release\ulubioneaction.o
+./release\treeviewelement.o
+./release\treeview.o
+./release\treeviewstyle.o
+./release\dialogstyle.o
+./release\moc_mainwindow.o
+./release\moc_filesystemcontroller.o
+./release\moc_ulubioneaction.o
+./release\moc_treeview.o
+./release\moc_dialogstyle.o
+./release\qrc_ikony.o
+);

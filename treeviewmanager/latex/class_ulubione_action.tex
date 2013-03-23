@@ -1,0 +1,74 @@
+\hypertarget{class_ulubione_action}{
+\section{UlubioneAction Class Reference}
+\label{class_ulubione_action}\index{UlubioneAction@{UlubioneAction}}
+}
+
+
+Klasa akcji menu Ulubionych.  
+
+
+
+
+{\ttfamily \#include $<$ulubioneaction.h$>$}
+
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ulubione_action_aa41010fb7799b8962dc713542ace1a91}{
+void \hyperlink{class_ulubione_action_aa41010fb7799b8962dc713542ace1a91}{przeslijDalej} ()}
+\label{class_ulubione_action_aa41010fb7799b8962dc713542ace1a91}
+
+\begin{DoxyCompactList}\small\item\em Slot odbierający informację o wciśniętej akcji emitujący sygnał wraz z indetyfikatorem. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ulubione_action_a4884b96c9fe0d4ff8ba498e6797d4561}{
+void \hyperlink{class_ulubione_action_a4884b96c9fe0d4ff8ba498e6797d4561}{sygnalUlubione} (std::wstring)}
+\label{class_ulubione_action_a4884b96c9fe0d4ff8ba498e6797d4561}
+
+\begin{DoxyCompactList}\small\item\em Sygnał wciśnięcia przycisku wraz z indetyfikatorem. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ulubione_action_a5b3aeb74f280826be8487f24182cca1a}{UlubioneAction} (const QString \&s, QObject $\ast$p=0)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_ulubione_action_a37901a4bad09209e2dc3c994d1fa4a00}{
+std::wstring \hyperlink{class_ulubione_action_a37901a4bad09209e2dc3c994d1fa4a00}{getVal} ()}
+\label{class_ulubione_action_a37901a4bad09209e2dc3c994d1fa4a00}
+
+\begin{DoxyCompactList}\small\item\em Zwraca identyfikator. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa akcji menu Ulubionych. \begin{DoxyAuthor}{Author}
+Sławomir Gefert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2012-\/06-\/13
+\end{DoxyDate}
+Klasa dziedziczy po klasie QAction. Używana w celu przechowywania dodatkowej informacji identyfikującej wybraną akcję. Sygnał trigerred() (kliknięcią na nią) jest przkazywany do jej slotu \hyperlink{class_ulubione_action_aa41010fb7799b8962dc713542ace1a91}{przeslijDalej()}, który to pobiera jej \char`\"{}identyfikator\char`\"{} i wysyła sygnał z paramatrem, dzięki temu możliwa jest łatwa indetyfikacja, która to akcja została wybrana z menu. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_ulubione_action_a5b3aeb74f280826be8487f24182cca1a}{
+\index{UlubioneAction@{UlubioneAction}!UlubioneAction@{UlubioneAction}}
+\index{UlubioneAction@{UlubioneAction}!UlubioneAction@{UlubioneAction}}
+\subsubsection[{UlubioneAction}]{\setlength{\rightskip}{0pt plus 5cm}UlubioneAction::UlubioneAction (
+\begin{DoxyParamCaption}
+\item[{const QString \&}]{ s, }
+\item[{QObject $\ast$}]{ p = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{class_ulubione_action_a5b3aeb74f280826be8487f24182cca1a}
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]nazwa wyświetlana oraz identyfikator \item[{\em p}]rodzic \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ulubioneaction.h\item 
+ulubioneaction.cpp\end{DoxyCompactItemize}

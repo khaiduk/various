@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TreeChartManager</string>
+  </property>
+  <widget class="QWidget" name="glownyWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetNoConstraint</enum>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMaximumSize</enum>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="BAdres">
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BPrzejdz">
+            <property name="text">
+             <string>Przejdź</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="Menu">
+         <attribute name="title">
+          <string>Menu</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QPushButton" name="BOdswiez">
+              <property name="text">
+               <string>Odśwież</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/Refresh.png</normaloff>:/menu/ikony/Refresh.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+R</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BUlubione">
+              <property name="text">
+               <string>Ulubionee</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/Favourites2.png</normaloff>:/menu/ikony/Favourites2.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BStart">
+              <property name="text">
+               <string>Start</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/home.png</normaloff>:/menu/ikony/home.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BOtworz">
+              <property name="text">
+               <string>Otwórz</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/Open.png</normaloff>:/menu/ikony/Open.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+O</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BKopiuj">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string>Kopiuj</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/Copy.png</normaloff>:/menu/ikony/Copy.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+C</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BWytnij">
+              <property name="text">
+               <string>Wytnij</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/Cut.png</normaloff>:/menu/ikony/Cut.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+X</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BWklej">
+              <property name="text">
+               <string>Wklej</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/Paste.png</normaloff>:/menu/ikony/Paste.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+V</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BUsun">
+              <property name="text">
+               <string>Usuń</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/Delete.png</normaloff>:/menu/ikony/Delete.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Del</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BZmienNazwe">
+              <property name="text">
+               <string>Zmień nazwę</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/Rename.png</normaloff>:/menu/ikony/Rename.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BNowyFolder">
+              <property name="text">
+               <string>Nowy Folder</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/NewFolder.png</normaloff>:/menu/ikony/NewFolder.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+N</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BWindows">
+              <property name="text">
+               <string>Windows</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/Windows.png</normaloff>:/menu/ikony/Windows.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BWyjscie">
+              <property name="text">
+               <string>Wyjście</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/exit.png</normaloff>:/menu/ikony/exit.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="Ustawienia">
+         <attribute name="title">
+          <string>Ustawienia</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="BUstalKatalogStartowy">
+              <property name="text">
+               <string>Ustaw Katalog Startowy</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/SetStartFolder.png</normaloff>:/menu/ikony/SetStartFolder.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BKolory">
+              <property name="text">
+               <string>Ustaw wygląd</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ikony.qrc">
+                <normaloff>:/menu/ikony/Font.png</normaloff>:/menu/ikony/Font.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>22</width>
+                <height>22</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWebView" name="webView">
+        <property name="url">
+         <url>
+          <string>about:blank</string>
+         </url>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="TreeView" name="treeView" native="true"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+  <customwidget>
+   <class>TreeView</class>
+   <extends>QWidget</extends>
+   <header>treeview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>BWytnij</tabstop>
+  <tabstop>BWklej</tabstop>
+  <tabstop>BUstalKatalogStartowy</tabstop>
+ </tabstops>
+ <resources>
+  <include location="ikony.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,16 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\filesystemcontroller.o
+./debug\ulubioneaction.o
+./debug\treeviewelement.o
+./debug\treeview.o
+./debug\treeviewstyle.o
+./debug\dialogstyle.o
+./debug\moc_mainwindow.o
+./debug\moc_filesystemcontroller.o
+./debug\moc_ulubioneaction.o
+./debug\moc_treeview.o
+./debug\moc_dialogstyle.o
+./debug\qrc_ikony.o
+);

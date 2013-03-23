@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/menu">
+        <file>ikony/Copy.png</file>
+        <file>ikony/Cut.png</file>
+        <file>ikony/Delete.png</file>
+        <file>ikony/NewFolder.png</file>
+        <file>ikony/Open.png</file>
+        <file>ikony/Paste.png</file>
+        <file>ikony/Refresh.png</file>
+        <file>ikony/Rename.png</file>
+        <file>ikony/Favourites2.png</file>
+        <file>ikony/Font.png</file>
+        <file>ikony/SetStartFolder.png</file>
+        <file>ikony/home.png</file>
+        <file>ikony/exit.png</file>
+        <file>ikony/Windows.png</file>
+    </qresource>
+</RCC>

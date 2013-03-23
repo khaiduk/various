@@ -1,0 +1,147 @@
+\hypertarget{class_tree_view}{
+\section{TreeView Class Reference}
+\label{class_tree_view}\index{TreeView@{TreeView}}
+}
+
+
+Klasa widoku drzewa.  
+
+
+
+
+{\ttfamily \#include $<$treeview.h$>$}
+
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tree_view_a8a4a5fc7c09b9713a255cd5ee0cadcdc}{
+void \hyperlink{class_tree_view_a8a4a5fc7c09b9713a255cd5ee0cadcdc}{setDirectory} (FileSystem::Path dir)}
+\label{class_tree_view_a8a4a5fc7c09b9713a255cd5ee0cadcdc}
+
+\begin{DoxyCompactList}\small\item\em ustawia katalog \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_ad6590db774d257781dccfabe243cf300}{
+void \hyperlink{class_tree_view_ad6590db774d257781dccfabe243cf300}{setStyle} (const \hyperlink{class_tree_view_style}{TreeViewStyle} \&style)}
+\label{class_tree_view_ad6590db774d257781dccfabe243cf300}
+
+\begin{DoxyCompactList}\small\item\em ustawia sposób wyświetlania \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tree_view_aafd063aaf57e7ff1c825db4ba03e5d18}{
+void \hyperlink{class_tree_view_aafd063aaf57e7ff1c825db4ba03e5d18}{directoryChanged} (FileSystem::Path dir)}
+\label{class_tree_view_aafd063aaf57e7ff1c825db4ba03e5d18}
+
+\begin{DoxyCompactList}\small\item\em Sygnał -\/ zmiana bieżącego katalogu. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_acc8c25815072a52f2cfbcf3e06181709}{
+void \hyperlink{class_tree_view_acc8c25815072a52f2cfbcf3e06181709}{openFile} (FileSystem::Path dir)}
+\label{class_tree_view_acc8c25815072a52f2cfbcf3e06181709}
+
+\begin{DoxyCompactList}\small\item\em Sygnał -\/ próba otwarcia pliku. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_ae83b51108ab42dd3f94306f12c836fbe}{
+void \hyperlink{class_tree_view_ae83b51108ab42dd3f94306f12c836fbe}{selectedElements} (std::vector$<$ FileSystem::Path $>$ dir)}
+\label{class_tree_view_ae83b51108ab42dd3f94306f12c836fbe}
+
+\begin{DoxyCompactList}\small\item\em Sygnał -\/ zaznaczenie elementów. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tree_view_aaa320b060caa0867f629c953b2d242a3}{
+{\bfseries TreeView} (QWidget $\ast$parent=0)}
+\label{class_tree_view_aaa320b060caa0867f629c953b2d242a3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tree_view_aec03cf0f103de72879377ead28b71eeb}{
+void \hyperlink{class_tree_view_aec03cf0f103de72879377ead28b71eeb}{paintEvent} (QPaintEvent $\ast$event)}
+\label{class_tree_view_aec03cf0f103de72879377ead28b71eeb}
+
+\begin{DoxyCompactList}\small\item\em Zdarzenie -\/ rysowanie obiektu. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_a658b8c7b25760033f2039358c4885ac7}{
+void \hyperlink{class_tree_view_a658b8c7b25760033f2039358c4885ac7}{wheelEvent} (QWheelEvent $\ast$event)}
+\label{class_tree_view_a658b8c7b25760033f2039358c4885ac7}
+
+\begin{DoxyCompactList}\small\item\em Zdarzenie -\/ użycie kółka myszy. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_a424647d454ad86bed4c0bcb395859b06}{
+void \hyperlink{class_tree_view_a424647d454ad86bed4c0bcb395859b06}{mouseMoveEvent} (QMouseEvent $\ast$event)}
+\label{class_tree_view_a424647d454ad86bed4c0bcb395859b06}
+
+\begin{DoxyCompactList}\small\item\em Zdarzenie -\/ przesunięcie myszy. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_a7af5eec8ccfd886bcfe83bd9777d3825}{
+void \hyperlink{class_tree_view_a7af5eec8ccfd886bcfe83bd9777d3825}{mousePressEvent} (QMouseEvent $\ast$event)}
+\label{class_tree_view_a7af5eec8ccfd886bcfe83bd9777d3825}
+
+\begin{DoxyCompactList}\small\item\em Zdarzenie -\/ wciśnięcie przycisku myszy. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_ae368e9ae74eb41196ebf7b356bbce1d2}{
+void \hyperlink{class_tree_view_ae368e9ae74eb41196ebf7b356bbce1d2}{mouseReleaseEvent} (QMouseEvent $\ast$event)}
+\label{class_tree_view_ae368e9ae74eb41196ebf7b356bbce1d2}
+
+\begin{DoxyCompactList}\small\item\em Zdarzenie -\/ pusczenie przycisku myszy. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_ade37ecae103914fe370ef0ce9f6bf5ed}{
+void \hyperlink{class_tree_view_ade37ecae103914fe370ef0ce9f6bf5ed}{mouseDoubleClickEvent} (QMouseEvent $\ast$event)}
+\label{class_tree_view_ade37ecae103914fe370ef0ce9f6bf5ed}
+
+\begin{DoxyCompactList}\small\item\em Zdarzenie -\/ dwukrotne klikniecie myszą. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_a93408f2e9d2b97d24e03cbb4565ee461}{
+void \hyperlink{class_tree_view_a93408f2e9d2b97d24e03cbb4565ee461}{updateCurrentElement} ()}
+\label{class_tree_view_a93408f2e9d2b97d24e03cbb4565ee461}
+
+\begin{DoxyCompactList}\small\item\em Ustawia bieżący element ze względu na położenie widoku. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tree_view_ace7726831becfd3f749d1c358b916f54}{
+QRectF \hyperlink{class_tree_view_ace7726831becfd3f749d1c358b916f54}{\_\-rootRect}}
+\label{class_tree_view_ace7726831becfd3f749d1c358b916f54}
+
+\begin{DoxyCompactList}\small\item\em Prostokąt reprezentujący korzeń drzewa względem widoku. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_aa613d0e84d8f5a0916ad3266d9d84efc}{
+bool \hyperlink{class_tree_view_aa613d0e84d8f5a0916ad3266d9d84efc}{\_\-currentlySelecting}}
+\label{class_tree_view_aa613d0e84d8f5a0916ad3266d9d84efc}
+
+\begin{DoxyCompactList}\small\item\em Czy jesteśmy w trakcie zaznaczania. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_a7afa3e1d36e0963f1927edbbef92606f}{
+QPainterPath \hyperlink{class_tree_view_a7afa3e1d36e0963f1927edbbef92606f}{\_\-selectionPath}}
+\label{class_tree_view_a7afa3e1d36e0963f1927edbbef92606f}
+
+\begin{DoxyCompactList}\small\item\em Obszar zaznaczania. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_ab5a702f71ba817304249b4742b5da11d}{
+\hyperlink{class_tree_view_element}{TreeViewElement} $\ast$ \hyperlink{class_tree_view_ab5a702f71ba817304249b4742b5da11d}{\_\-active}}
+\label{class_tree_view_ab5a702f71ba817304249b4742b5da11d}
+
+\begin{DoxyCompactList}\small\item\em Aktualnie aktywny element drzewa. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_a118be06d27a25a62da884c503b960168}{
+\hyperlink{class_tree_view_element}{TreeViewElement} $\ast$ \hyperlink{class_tree_view_a118be06d27a25a62da884c503b960168}{\_\-root}}
+\label{class_tree_view_a118be06d27a25a62da884c503b960168}
+
+\begin{DoxyCompactList}\small\item\em Korzeń drzewa. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_a847b5cd64aca025e2ae8d4349beef025}{
+\hyperlink{class_tree_view_element}{TreeViewElement} $\ast$ \hyperlink{class_tree_view_a847b5cd64aca025e2ae8d4349beef025}{\_\-current}}
+\label{class_tree_view_a847b5cd64aca025e2ae8d4349beef025}
+
+\begin{DoxyCompactList}\small\item\em Element bieżący. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_a525b8577be010e620325f112540e8daf}{
+std::set$<$ \hyperlink{class_tree_view_element}{TreeViewElement} $\ast$ $>$ \hyperlink{class_tree_view_a525b8577be010e620325f112540e8daf}{\_\-selected}}
+\label{class_tree_view_a525b8577be010e620325f112540e8daf}
+
+\begin{DoxyCompactList}\small\item\em Elementy zaznaczone. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_ac29362661362d4738dcc3019ba89dd7d}{
+QPoint \hyperlink{class_tree_view_ac29362661362d4738dcc3019ba89dd7d}{prevpos}}
+\label{class_tree_view_ac29362661362d4738dcc3019ba89dd7d}
+
+\begin{DoxyCompactList}\small\item\em Ostatnie znane położenie kursora. \item\end{DoxyCompactList}\item 
+\hypertarget{class_tree_view_a4cea4b93973813b5898ff3ebfad77924}{
+\hyperlink{class_tree_view_style}{TreeViewStyle} {\bfseries \_\-style}}
+\label{class_tree_view_a4cea4b93973813b5898ff3ebfad77924}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa widoku drzewa. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+treeview.h\item 
+treeview.cpp\end{DoxyCompactItemize}

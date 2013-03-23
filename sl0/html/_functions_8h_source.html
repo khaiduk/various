@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>SL/0: Plik źródłowy sl0/Functions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&nbsp;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>sl0/Functions.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="_functions_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#pragma once</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_statements_8h.html">Statements.h</a>&quot;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &quot;<a class="code" href="_value_8h.html">Value.h</a>&quot;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="_varibles_8h.html">Varibles.h</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="_data_struct_8h.html">DataStruct.h</a>&quot;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="keyword">namespace </span>DataStruct
+<a name="l00008"></a>00008 {
+<a name="l00012"></a><a class="code" href="class_data_struct_1_1_function.html">00012</a>         <span class="keyword">class </span><a class="code" href="class_data_struct_1_1_function.html" title="Funkcja.">Function</a>
+<a name="l00013"></a>00013         {
+<a name="l00014"></a>00014                 <span class="keywordtype">string</span> name;
+<a name="l00015"></a>00015                 <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> returntype;
+<a name="l00016"></a>00016                 vector &lt;Varible&gt; parameters;
+<a name="l00017"></a>00017                 <a class="code" href="class_data_struct_1_1_statement.html" title="Instrukcja. Wirtualna klasa na obiekt instrukcji.">Statement</a>* body;
+<a name="l00018"></a>00018                 <span class="keywordtype">bool</span> isExternal;
+<a name="l00019"></a>00019         <span class="keyword">public</span>:
+<a name="l00020"></a><a class="code" href="class_data_struct_1_1_function.html#a07b7eb98374501832aebde11e29e4d9c">00020</a>                 <a class="code" href="class_data_struct_1_1_function.html#a07b7eb98374501832aebde11e29e4d9c">Function</a>(){}
+<a name="l00027"></a><a class="code" href="class_data_struct_1_1_function.html#ac34beadfa5a4713cad449dd64fdad302">00027</a>                 <a class="code" href="class_data_struct_1_1_function.html#ac34beadfa5a4713cad449dd64fdad302" title="Tworzy obiekt funkcji.">Function</a>(<span class="keywordtype">string</span> functionname, <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> returns, <span class="keywordtype">bool</span> external):name(functionname), returntype(returns), isExternal(external){}
+<a name="l00028"></a><a class="code" href="class_data_struct_1_1_function.html#a573a88d939ac5d4c2185fd735a8c2c6e">00028</a>                 <a class="code" href="class_data_struct_1_1_function.html#a573a88d939ac5d4c2185fd735a8c2c6e">~Function</a>(<span class="keywordtype">void</span>)
+<a name="l00029"></a>00029                 {
+<a name="l00030"></a>00030                         <span class="keywordflow">if</span>(body != NULL)
+<a name="l00031"></a>00031                                 <span class="keyword">delete</span> body;
+<a name="l00032"></a>00032                 }
+<a name="l00033"></a>00033 
+<a name="l00039"></a><a class="code" href="class_data_struct_1_1_function.html#ad841b9671a158f4ea272dc4d45dad99b">00039</a>                 <span class="keywordtype">void</span> <a class="code" href="class_data_struct_1_1_function.html#ad841b9671a158f4ea272dc4d45dad99b" title="Dodaje parametr funkcji.">addParam</a>(<span class="keywordtype">string</span> name, <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> type)
+<a name="l00040"></a>00040                 {
+<a name="l00041"></a>00041                         <a class="code" href="struct_varible.html">Varible</a> param;
+<a name="l00042"></a>00042                         param.<a class="code" href="struct_varible.html#a8b4129b2c98bbeef89adf4a1bee39064">name</a> = name;
+<a name="l00043"></a>00043                         param.<a class="code" href="struct_varible.html#a8cd7981d8bbd1228b5eebbfb6484b704">value</a> = type;
+<a name="l00044"></a>00044                         parameters.push_back(param);
+<a name="l00045"></a>00045                 }
+<a name="l00046"></a>00046                 
+<a name="l00051"></a><a class="code" href="class_data_struct_1_1_function.html#ad0465f5695fb2fb8c1a6791e26377dd9">00051</a>                 <span class="keywordtype">void</span> <a class="code" href="class_data_struct_1_1_function.html#ad0465f5695fb2fb8c1a6791e26377dd9" title="Dodaje ciało funkcji.">addBody</a>(<a class="code" href="class_data_struct_1_1_statement.html" title="Instrukcja. Wirtualna klasa na obiekt instrukcji.">Statement</a>* functionbody)
+<a name="l00052"></a>00052                 {
+<a name="l00053"></a>00053                         body = functionbody;
+<a name="l00054"></a>00054                 }
+<a name="l00055"></a>00055 
+<a name="l00060"></a><a class="code" href="class_data_struct_1_1_function.html#ad3441bd8786720dee1528dfaa2b4e59c">00060</a>                 <span class="keyword">virtual</span> <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> <a class="code" href="class_data_struct_1_1_function.html#ad3441bd8786720dee1528dfaa2b4e59c" title="Wywołuje funkcje.">Call</a>(vector&lt;Value::Value&gt; params)
+<a name="l00061"></a>00061                 {
+<a name="l00062"></a>00062                         <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>.<a class="code" href="class_varible_manager.html#a22184fb5278dff55a5e63ac05d22fa78" title="Rozpocznij nowy zakres zmiennych.">beginScope</a>();
+<a name="l00063"></a>00063                         <span class="keywordflow">if</span>(params.size() != parameters.size() )
+<a name="l00064"></a>00064                         {
+<a name="l00065"></a>00065                                 <a class="code" href="_error_8cpp.html#a5e7e27258e59f4c4a80e5fb757024a2d" title="Obiekt do obsługi błędów.">error</a>.<a class="code" href="class_error.html#aed8a52accd4b4c47533c78139664a2bb" title="Zgłasza błąd.">error</a>(<span class="stringliteral">&quot;Number of parameters not matching&quot;</span>);
+<a name="l00066"></a>00066                                 <span class="keywordflow">return</span> <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a>(<span class="stringliteral">&quot;0&quot;</span>);
+<a name="l00067"></a>00067                         }
+<a name="l00068"></a>00068                         <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;parameters.size();i++)
+<a name="l00069"></a>00069                         {
+<a name="l00070"></a>00070                                 <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>.<a class="code" href="class_varible_manager.html#ae097f4ce40b72c55eeca7df9b6623c7c" title="Dodaje zmienną.">add</a>(parameters[i].name);
+<a name="l00071"></a>00071                                 <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>[parameters[i].name]=params[i].cast(parameters[i].value.type);
+<a name="l00072"></a>00072                         }
+<a name="l00073"></a>00073                         <span class="keywordflow">try</span>
+<a name="l00074"></a>00074                         {
+<a name="l00075"></a>00075                                 body-&gt;<a class="code" href="class_data_struct_1_1_statement.html#a7de7d27d490dae7d5bbd1f23d4a32f93" title="Wykonuje daną instrukcję.">Exec</a>();
+<a name="l00076"></a>00076                         }
+<a name="l00077"></a>00077                         <span class="keywordflow">catch</span>(<a class="code" href="class_data_struct_1_1_control_exception.html" title="Wyjątek sterujący. (np. break, return).">ControlException</a> c)
+<a name="l00078"></a>00078                         {
+<a name="l00079"></a>00079                                 <span class="keywordflow">if</span>(c.<a class="code" href="class_data_struct_1_1_control_exception.html#a3fc2d503462cb828c151d922e3f3cb62">type</a> == <a class="code" href="class_data_struct_1_1_control_exception.html#adf8416e766d84360aa3b137448f0cc3cab9f0cd5e3be9d11c4c9d17043f31abf2">ControlException::RETURN</a>)
+<a name="l00080"></a>00080                                 {
+<a name="l00081"></a>00081                                         <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>.<a class="code" href="class_varible_manager.html#a8d6b4738dd94b85a91126e7889668eba" title="Zakończ bieżący zakres zmiennych.">endScope</a>();
+<a name="l00082"></a>00082                                         <span class="keywordflow">if</span>(returntype == <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a065354a0f7f71d253b86ab6ae260c141">Value::ERROR</a>)
+<a name="l00083"></a>00083                                                 <span class="keywordflow">return</span> c.<a class="code" href="class_data_struct_1_1_control_exception.html#a5d4bb69e6f620cbcd8c514f8af236255">value</a>;
+<a name="l00084"></a>00084                                         <span class="keywordflow">else</span>
+<a name="l00085"></a>00085                                                 <span class="keywordflow">return</span> c.<a class="code" href="class_data_struct_1_1_control_exception.html#a5d4bb69e6f620cbcd8c514f8af236255">value</a>.<a class="code" href="class_value_1_1_value.html#ae290c99bb7ec395ef28caa41eaaf223e" title="Rzutuje wartość na dany typ.">cast</a>(returntype);
+<a name="l00086"></a>00086                                 }
+<a name="l00087"></a>00087                                 <span class="keywordflow">else</span>
+<a name="l00088"></a>00088                                         <span class="keywordflow">throw</span>;
+<a name="l00089"></a>00089                         }
+<a name="l00090"></a>00090                         <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>.<a class="code" href="class_varible_manager.html#a8d6b4738dd94b85a91126e7889668eba" title="Zakończ bieżący zakres zmiennych.">endScope</a>();
+<a name="l00091"></a>00091                         <span class="keywordflow">return</span> <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a>(<span class="stringliteral">&quot;0&quot;</span>);
+<a name="l00092"></a>00092                 }
+<a name="l00093"></a>00093 
+<a name="l00094"></a><a class="code" href="class_data_struct_1_1_function.html#aaa5919684b8e1247d2da17c58ae299f2">00094</a>                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_data_struct_1_1_function.html#aaa5919684b8e1247d2da17c58ae299f2">debug</a>()
+<a name="l00095"></a>00095                 {
+<a name="l00096"></a>00096                         <span class="keywordtype">string</span> typeNames[<a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a065354a0f7f71d253b86ab6ae260c141">Value::ERROR</a>+1];
+<a name="l00097"></a>00097                         typeNames[Value::BOOL] = <span class="stringliteral">&quot;BOOL&quot;</span>;
+<a name="l00098"></a>00098                         typeNames[Value::CHAR] = <span class="stringliteral">&quot;CHAR&quot;</span>;
+<a name="l00099"></a>00099                         typeNames[Value::FLOAT] = <span class="stringliteral">&quot;FLOAT&quot;</span>;
+<a name="l00100"></a>00100                         typeNames[Value::INT] = <span class="stringliteral">&quot;INT&quot;</span>;
+<a name="l00101"></a>00101                         typeNames[Value::ERROR] = <span class="stringliteral">&quot;VOID&quot;</span>;
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103                         <span class="keywordflow">if</span>(isExternal) cout &lt;&lt; <span class="stringliteral">&quot;extern &quot;</span>;
+<a name="l00104"></a>00104                         cout &lt;&lt; <span class="stringliteral">&quot;function &quot;</span>&lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; typeNames[returntype] &lt;&lt; endl;
+<a name="l00105"></a>00105                         cout &lt;&lt; <span class="stringliteral">&quot;params [&quot;</span>&lt;&lt; endl;
+<a name="l00106"></a>00106                         <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;parameters.size();i++)
+<a name="l00107"></a>00107                                 cout &lt;&lt; parameters[i].name &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; typeNames[parameters[i].value.type] &lt;&lt; endl;
+<a name="l00108"></a>00108                         cout &lt;&lt; <span class="stringliteral">&quot;] body [&quot;</span>&lt;&lt; endl;
+<a name="l00109"></a>00109                         body-&gt;<a class="code" href="class_data_struct_1_1_statement.html#acf467425af6f2e170d42d2abf21e22cc" title="Wyświetla informację debugujące.">debug</a>();
+<a name="l00110"></a>00110                         cout &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; endl;
+<a name="l00111"></a>00111                 }
+<a name="l00112"></a>00112 
+<a name="l00113"></a><a class="code" href="class_data_struct_1_1_function.html#a7081a9dd1e941bfc803e67471075fa45">00113</a>                 <span class="keyword">virtual</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> <a class="code" href="class_data_struct_1_1_function.html#a7081a9dd1e941bfc803e67471075fa45">checkTypes</a>()
+<a name="l00114"></a>00114                 {
+<a name="l00115"></a>00115                         <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> type=returntype;
+<a name="l00116"></a>00116                         <span class="keywordflow">if</span>(type == <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a065354a0f7f71d253b86ab6ae260c141">Value::ERROR</a>)
+<a name="l00117"></a>00117                                 type = Value::INT;
+<a name="l00118"></a>00118                         <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>.<a class="code" href="class_varible_manager.html#a22184fb5278dff55a5e63ac05d22fa78" title="Rozpocznij nowy zakres zmiennych.">beginScope</a>();
+<a name="l00119"></a>00119                         <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;parameters.size();i++)
+<a name="l00120"></a>00120                         {
+<a name="l00121"></a>00121                                 <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>.<a class="code" href="class_varible_manager.html#ae097f4ce40b72c55eeca7df9b6623c7c" title="Dodaje zmienną.">add</a>(parameters[i].name);
+<a name="l00122"></a>00122                                 <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>[parameters[i].name].type=parameters[i].value.type;
+<a name="l00123"></a>00123                         }
+<a name="l00124"></a>00124                         <span class="keywordflow">if</span>( ! body-&gt;<a class="code" href="class_data_struct_1_1_statement.html#a19c7ba392aab7ba027a7586fe3401b36" title="Sprawdza zgodność typów.">checkTypes</a>() )
+<a name="l00125"></a>00125                                 type = <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a065354a0f7f71d253b86ab6ae260c141">Value::ERROR</a>;
+<a name="l00126"></a>00126                         <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>.<a class="code" href="class_varible_manager.html#a8d6b4738dd94b85a91126e7889668eba" title="Zakończ bieżący zakres zmiennych.">endScope</a>();
+<a name="l00127"></a>00127                         <span class="keywordflow">return</span> type;
+<a name="l00128"></a>00128                 }
+<a name="l00129"></a>00129 
+<a name="l00130"></a><a class="code" href="class_data_struct_1_1_function.html#a88c7b1a5c12f402c080233743bc10e99">00130</a>                 <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="class_data_struct_1_1_function.html#a88c7b1a5c12f402c080233743bc10e99">getName</a>(){<span class="keywordflow">return</span> name;}
+<a name="l00131"></a>00131 
+<a name="l00132"></a><a class="code" href="class_data_struct_1_1_function.html#a8f324a74e640f755f41289ec83aaddee">00132</a>                 <span class="keyword">virtual</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> <a class="code" href="class_data_struct_1_1_function.html#a8f324a74e640f755f41289ec83aaddee">getType</a>()
+<a name="l00133"></a>00133                 {
+<a name="l00134"></a>00134                         <span class="keywordflow">if</span>(returntype == <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a065354a0f7f71d253b86ab6ae260c141">Value::ERROR</a>)
+<a name="l00135"></a>00135                                 <span class="keywordflow">return</span> Value::INT;
+<a name="l00136"></a>00136                         <span class="keywordflow">else</span>
+<a name="l00137"></a>00137                                 <span class="keywordflow">return</span> returntype;
+<a name="l00138"></a>00138                 }
+<a name="l00139"></a>00139 
+<a name="l00140"></a><a class="code" href="class_data_struct_1_1_function.html#aa7e9db73574c5c0b440cf873ff7b0f02">00140</a>                 <span class="keywordtype">bool</span> <a class="code" href="class_data_struct_1_1_function.html#aa7e9db73574c5c0b440cf873ff7b0f02">isExtern</a>()
+<a name="l00141"></a>00141                 {
+<a name="l00142"></a>00142                         <span class="keywordflow">return</span> isExternal;
+<a name="l00143"></a>00143                 }
+<a name="l00144"></a>00144         };
+<a name="l00145"></a>00145 
+<a name="l00146"></a><a class="code" href="class_data_struct_1_1_message_function.html">00146</a>         <span class="keyword">class </span><a class="code" href="class_data_struct_1_1_message_function.html">MessageFunction</a> : <span class="keyword">public</span> <a class="code" href="class_data_struct_1_1_function.html" title="Funkcja.">Function</a>
+<a name="l00147"></a>00147         {
+<a name="l00148"></a>00148         <span class="keyword">public</span>:
+<a name="l00149"></a><a class="code" href="class_data_struct_1_1_message_function.html#a397390f3c8ecc75417d0199606f11c47">00149</a>                 <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> <a class="code" href="class_data_struct_1_1_message_function.html#a397390f3c8ecc75417d0199606f11c47" title="Wywołuje funkcje.">Call</a>(vector&lt;Value::Value&gt; params)
+<a name="l00150"></a>00150                 {
+<a name="l00151"></a>00151                         <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;params.size();i++)
+<a name="l00152"></a>00152                         {
+<a name="l00153"></a>00153                                 cout &lt;&lt; params[i];
+<a name="l00154"></a>00154                         }
+<a name="l00155"></a>00155                         cout &lt;&lt; endl;
+<a name="l00156"></a>00156                         <span class="keywordflow">return</span> <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a>(<span class="stringliteral">&quot;0&quot;</span>);
+<a name="l00157"></a>00157                 }
+<a name="l00158"></a>00158 
+<a name="l00159"></a><a class="code" href="class_data_struct_1_1_message_function.html#a8d24a5f8dd8b203f5ba53ab3c2d717c6">00159</a>                 <span class="keywordtype">void</span> <a class="code" href="class_data_struct_1_1_message_function.html#a8d24a5f8dd8b203f5ba53ab3c2d717c6">debug</a>()
+<a name="l00160"></a>00160                 {
+<a name="l00161"></a>00161                         cout &lt;&lt; <span class="stringliteral">&quot;function message : INT;&quot;</span> &lt;&lt; endl;
+<a name="l00162"></a>00162                 }
+<a name="l00163"></a>00163 
+<a name="l00164"></a><a class="code" href="class_data_struct_1_1_message_function.html#a1bdc35ff3ffe0d36345e63f0926086d7">00164</a>                 <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> <a class="code" href="class_data_struct_1_1_message_function.html#a1bdc35ff3ffe0d36345e63f0926086d7">checkTypes</a>()
+<a name="l00165"></a>00165                 {
+<a name="l00166"></a>00166                         <span class="keywordflow">return</span> Value::INT;
+<a name="l00167"></a>00167                 }
+<a name="l00168"></a>00168 
+<a name="l00169"></a><a class="code" href="class_data_struct_1_1_message_function.html#a5aaa46887c8262ce14d0ade3948028f0">00169</a>                 <span class="keywordtype">string</span> <a class="code" href="class_data_struct_1_1_message_function.html#a5aaa46887c8262ce14d0ade3948028f0">getName</a>(){<span class="keywordflow">return</span> string(<span class="stringliteral">&quot;message&quot;</span>);}
+<a name="l00170"></a>00170 
+<a name="l00171"></a><a class="code" href="class_data_struct_1_1_message_function.html#a6f9d6354a1b3067224f3804892c4f670">00171</a>                 <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> <a class="code" href="class_data_struct_1_1_message_function.html#a6f9d6354a1b3067224f3804892c4f670">getType</a>()
+<a name="l00172"></a>00172                 {
+<a name="l00173"></a>00173                         <span class="keywordflow">return</span> Value::INT;
+<a name="l00174"></a>00174                 }
+<a name="l00175"></a>00175         };
+<a name="l00176"></a>00176 
+<a name="l00177"></a><a class="code" href="class_data_struct_1_1_rand_function.html">00177</a>         <span class="keyword">class </span><a class="code" href="class_data_struct_1_1_rand_function.html">RandFunction</a> : <span class="keyword">public</span> <a class="code" href="class_data_struct_1_1_function.html" title="Funkcja.">Function</a>
+<a name="l00178"></a>00178         {
+<a name="l00179"></a>00179         <span class="keyword">public</span>:
+<a name="l00180"></a><a class="code" href="class_data_struct_1_1_rand_function.html#aea73831f5deb8c761b63f856c2fe2053">00180</a>                 <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> <a class="code" href="class_data_struct_1_1_rand_function.html#aea73831f5deb8c761b63f856c2fe2053" title="Wywołuje funkcje.">Call</a>(vector&lt;Value::Value&gt; params)
+<a name="l00181"></a>00181                 {
+<a name="l00182"></a>00182                         <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> result;
+<a name="l00183"></a>00183                         result.<a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>=Value::INT;
+<a name="l00184"></a>00184                         result.<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>=rand();
+<a name="l00185"></a>00185                         <span class="keywordflow">return</span> result;
+<a name="l00186"></a>00186                 }
+<a name="l00187"></a>00187 
+<a name="l00188"></a><a class="code" href="class_data_struct_1_1_rand_function.html#a0244a9e3a5ea6398a67c664f9973d9de">00188</a>                 <span class="keywordtype">void</span> <a class="code" href="class_data_struct_1_1_rand_function.html#a0244a9e3a5ea6398a67c664f9973d9de">debug</a>()
+<a name="l00189"></a>00189                 {
+<a name="l00190"></a>00190                         cout &lt;&lt; <span class="stringliteral">&quot;function rand : INT;&quot;</span> &lt;&lt; endl;
+<a name="l00191"></a>00191                 }
+<a name="l00192"></a>00192 
+<a name="l00193"></a><a class="code" href="class_data_struct_1_1_rand_function.html#ad543aed22cd4396b3106428110e6f411">00193</a>                 <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> <a class="code" href="class_data_struct_1_1_rand_function.html#ad543aed22cd4396b3106428110e6f411">checkTypes</a>()
+<a name="l00194"></a>00194                 {
+<a name="l00195"></a>00195                         <span class="keywordflow">return</span> Value::INT;
+<a name="l00196"></a>00196                 }
+<a name="l00197"></a>00197 
+<a name="l00198"></a><a class="code" href="class_data_struct_1_1_rand_function.html#a0abef7c52ce6db833a869fceefef816f">00198</a>                 <span class="keywordtype">string</span> <a class="code" href="class_data_struct_1_1_rand_function.html#a0abef7c52ce6db833a869fceefef816f">getName</a>(){<span class="keywordflow">return</span> string(<span class="stringliteral">&quot;rand&quot;</span>);}
+<a name="l00199"></a>00199 
+<a name="l00200"></a><a class="code" href="class_data_struct_1_1_rand_function.html#ad1e0edbdd63b8adcebcea39ee16874f3">00200</a>                 <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> <a class="code" href="class_data_struct_1_1_rand_function.html#ad1e0edbdd63b8adcebcea39ee16874f3">getType</a>()
+<a name="l00201"></a>00201                 {
+<a name="l00202"></a>00202                         <span class="keywordflow">return</span> Value::INT;
+<a name="l00203"></a>00203                 }
+<a name="l00204"></a>00204         };
+<a name="l00205"></a>00205 
+<a name="l00206"></a><a class="code" href="class_data_struct_1_1_dbg_function.html">00206</a>         <span class="keyword">class </span><a class="code" href="class_data_struct_1_1_dbg_function.html">DbgFunction</a> : <span class="keyword">public</span> <a class="code" href="class_data_struct_1_1_function.html" title="Funkcja.">Function</a>
+<a name="l00207"></a>00207         {
+<a name="l00208"></a>00208         <span class="keyword">public</span>:
+<a name="l00209"></a><a class="code" href="class_data_struct_1_1_dbg_function.html#a508a015a48295a72fd559a7d1d8d32ce">00209</a>                 <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> <a class="code" href="class_data_struct_1_1_dbg_function.html#a508a015a48295a72fd559a7d1d8d32ce" title="Wywołuje funkcje.">Call</a>(vector&lt;Value::Value&gt; params)
+<a name="l00210"></a>00210                 {
+<a name="l00211"></a>00211                         <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>.<a class="code" href="class_varible_manager.html#a22de262bc04e1ffb4e2cc782ab129317" title="Wyświetla informację debugujące.">debug</a>();
+<a name="l00212"></a>00212                         <span class="keywordflow">return</span> <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a>(<span class="stringliteral">&quot;0&quot;</span>);
+<a name="l00213"></a>00213                 }
+<a name="l00214"></a>00214 
+<a name="l00215"></a><a class="code" href="class_data_struct_1_1_dbg_function.html#a624ff75be9715d297cfb2374ef006313">00215</a>                 <span class="keywordtype">void</span> <a class="code" href="class_data_struct_1_1_dbg_function.html#a624ff75be9715d297cfb2374ef006313">debug</a>()
+<a name="l00216"></a>00216                 {
+<a name="l00217"></a>00217                         cout &lt;&lt; <span class="stringliteral">&quot;function dbg : INT;&quot;</span> &lt;&lt; endl;
+<a name="l00218"></a>00218                 }
+<a name="l00219"></a>00219 
+<a name="l00220"></a><a class="code" href="class_data_struct_1_1_dbg_function.html#a7e95943fb0dbb1cef1eedf07d12db575">00220</a>                 <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> <a class="code" href="class_data_struct_1_1_dbg_function.html#a7e95943fb0dbb1cef1eedf07d12db575">checkTypes</a>()
+<a name="l00221"></a>00221                 {
+<a name="l00222"></a>00222                         <span class="keywordflow">return</span> Value::INT;
+<a name="l00223"></a>00223                 }
+<a name="l00224"></a>00224 
+<a name="l00225"></a><a class="code" href="class_data_struct_1_1_dbg_function.html#aea9d5cb4a023fc65a62dc7f9997f6984">00225</a>                 <span class="keywordtype">string</span> <a class="code" href="class_data_struct_1_1_dbg_function.html#aea9d5cb4a023fc65a62dc7f9997f6984">getName</a>(){<span class="keywordflow">return</span> string(<span class="stringliteral">&quot;dbg&quot;</span>);}
+<a name="l00226"></a>00226 
+<a name="l00227"></a><a class="code" href="class_data_struct_1_1_dbg_function.html#a3cd77c18b1790fc0e5d1e7320115f328">00227</a>                 <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> <a class="code" href="class_data_struct_1_1_dbg_function.html#a3cd77c18b1790fc0e5d1e7320115f328">getType</a>()
+<a name="l00228"></a>00228                 {
+<a name="l00229"></a>00229                         <span class="keywordflow">return</span> Value::INT;
+<a name="l00230"></a>00230                 }
+<a name="l00231"></a>00231         };
+<a name="l00232"></a>00232 }
+<a name="l00233"></a>00233 
+<a name="l00234"></a><a class="code" href="class_function_manager.html">00234</a> <span class="keyword">class </span><a class="code" href="class_function_manager.html">FunctionManager</a>
+<a name="l00235"></a>00235 {
+<a name="l00236"></a>00236         
+<a name="l00237"></a>00237         vector &lt;DataStruct::Function*&gt; functions;
+<a name="l00238"></a>00238         <a class="code" href="class_data_struct_1_1_function.html" title="Funkcja.">DataStruct::Function</a>* extrn;
+<a name="l00239"></a>00239 <span class="keyword">public</span>:
+<a name="l00240"></a><a class="code" href="class_function_manager.html#a0667b988042e6cf6a816d3dbb6cc636b">00240</a>         <a class="code" href="class_function_manager.html#a0667b988042e6cf6a816d3dbb6cc636b">FunctionManager</a>():extrn(NULL)
+<a name="l00241"></a>00241         {
+<a name="l00242"></a>00242                 <a class="code" href="class_data_struct_1_1_function.html" title="Funkcja.">DataStruct::Function</a>* function;
+<a name="l00243"></a>00243                 function = <span class="keyword">new</span> <a class="code" href="class_data_struct_1_1_rand_function.html">DataStruct::RandFunction</a>;
+<a name="l00244"></a>00244                 functions.push_back(function);
+<a name="l00245"></a>00245                 function = <span class="keyword">new</span> <a class="code" href="class_data_struct_1_1_message_function.html">DataStruct::MessageFunction</a>;
+<a name="l00246"></a>00246                 functions.push_back(function);
+<a name="l00247"></a>00247                 function = <span class="keyword">new</span> <a class="code" href="class_data_struct_1_1_dbg_function.html">DataStruct::DbgFunction</a>;
+<a name="l00248"></a>00248                 functions.push_back(function);
+<a name="l00249"></a>00249         }
+<a name="l00250"></a>00250 
+<a name="l00255"></a><a class="code" href="class_function_manager.html#acd611d87bf0fdc7183f10ee922cc2b71">00255</a>         <a class="code" href="class_data_struct_1_1_function.html" title="Funkcja.">DataStruct::Function</a>* <a class="code" href="class_function_manager.html#acd611d87bf0fdc7183f10ee922cc2b71" title="Pozwala na dostęp do funkcji.">operator[]</a>(<span class="keywordtype">string</span> name)
+<a name="l00256"></a>00256         {
+<a name="l00257"></a>00257                         <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;functions.size();i++)
+<a name="l00258"></a>00258                         {
+<a name="l00259"></a>00259                                 <span class="keywordflow">if</span>(functions[i]-&gt;getName() == name)
+<a name="l00260"></a>00260                                         <span class="keywordflow">return</span> functions[i];
+<a name="l00261"></a>00261                         }
+<a name="l00262"></a>00262                         <span class="comment">//function not found</span>
+<a name="l00263"></a>00263                         <a class="code" href="_error_8cpp.html#a5e7e27258e59f4c4a80e5fb757024a2d" title="Obiekt do obsługi błędów.">error</a>.<a class="code" href="class_error.html#aed8a52accd4b4c47533c78139664a2bb" title="Zgłasza błąd.">error</a>(<span class="stringliteral">&quot;Function does not exist: &quot;</span>+name);
+<a name="l00264"></a>00264                         <span class="keywordflow">return</span> NULL;
+<a name="l00265"></a>00265         }
+<a name="l00266"></a>00266 
+<a name="l00271"></a><a class="code" href="class_function_manager.html#a11d6b7d727303e4e57e1345c4cde27e2">00271</a>         <span class="keywordtype">void</span> <a class="code" href="class_function_manager.html#a11d6b7d727303e4e57e1345c4cde27e2" title="Dodaje funkcję.">add</a>(<a class="code" href="class_data_struct_1_1_function.html" title="Funkcja.">DataStruct::Function</a>* function)
+<a name="l00272"></a>00272         {               
+<a name="l00273"></a>00273                 <span class="keywordflow">if</span>(function-&gt;<a class="code" href="class_data_struct_1_1_function.html#aa7e9db73574c5c0b440cf873ff7b0f02">isExtern</a>() &amp;&amp; extrn==NULL)
+<a name="l00274"></a>00274                         extrn = function;
+<a name="l00275"></a>00275                 <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;functions.size();i++)
+<a name="l00276"></a>00276                 {
+<a name="l00277"></a>00277                         <span class="keywordflow">if</span>(functions[i]-&gt;getName() == function-&gt;<a class="code" href="class_data_struct_1_1_function.html#a88c7b1a5c12f402c080233743bc10e99">getName</a>())
+<a name="l00278"></a>00278                         {
+<a name="l00279"></a>00279                                 <a class="code" href="_error_8cpp.html#a5e7e27258e59f4c4a80e5fb757024a2d" title="Obiekt do obsługi błędów.">error</a>.<a class="code" href="class_error.html#aed8a52accd4b4c47533c78139664a2bb" title="Zgłasza błąd.">error</a>(<span class="stringliteral">&quot;Function alredy exist: &quot;</span>+function-&gt;<a class="code" href="class_data_struct_1_1_function.html#a88c7b1a5c12f402c080233743bc10e99">getName</a>());
+<a name="l00280"></a>00280                                 <span class="keywordflow">return</span>;
+<a name="l00281"></a>00281                         }
+<a name="l00282"></a>00282                 }
+<a name="l00283"></a>00283                 functions.push_back(function);
+<a name="l00284"></a>00284         }
+<a name="l00285"></a>00285 
+<a name="l00286"></a><a class="code" href="class_function_manager.html#afedff25e46a4e9a4cd70aea129144d7f">00286</a>         <span class="keywordtype">bool</span> <a class="code" href="class_function_manager.html#afedff25e46a4e9a4cd70aea129144d7f">check</a>()
+<a name="l00287"></a>00287         {
+<a name="l00288"></a>00288                 <span class="keywordtype">bool</span> isOk=<span class="keyword">true</span>;
+<a name="l00289"></a>00289                 <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;functions.size();i++)
+<a name="l00290"></a>00290                         <span class="keywordflow">if</span>(functions[i]-&gt;<a class="code" href="namespace_value.html#a76c85909f183de8d0057f7fbe94a73d9" title="Sprawdza zgodność typów.">checkTypes</a>() == Value::ERROR)
+<a name="l00291"></a>00291                                 isOk = <span class="keyword">false</span>;
+<a name="l00292"></a>00292                 <span class="keywordflow">return</span> isOk;
+<a name="l00293"></a>00293         }
+<a name="l00294"></a>00294 
+<a name="l00295"></a><a class="code" href="class_function_manager.html#a2a8723b6dece0db876e14836524a1421">00295</a>         <a class="code" href="class_data_struct_1_1_function.html" title="Funkcja.">DataStruct::Function</a>* <a class="code" href="class_function_manager.html#a2a8723b6dece0db876e14836524a1421">getExtern</a>()
+<a name="l00296"></a>00296         {
+<a name="l00297"></a>00297                 <span class="keywordflow">return</span> extrn;
+<a name="l00298"></a>00298         }
+<a name="l00299"></a>00299                 
+<a name="l00301"></a><a class="code" href="class_function_manager.html#a705227d58b0b50a83507ee4535f81d07">00301</a>         <span class="keywordtype">void</span> <a class="code" href="class_function_manager.html#a705227d58b0b50a83507ee4535f81d07" title="Wyświetla informację debugujące.">debug</a>()
+<a name="l00302"></a>00302         {
+<a name="l00303"></a>00303                 <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;functions.size();i++)
+<a name="l00304"></a>00304                 {
+<a name="l00305"></a>00305                         functions[i]-&gt;debug();
+<a name="l00306"></a>00306                 }
+<a name="l00307"></a>00307         }
+<a name="l00308"></a>00308 };
+<a name="l00309"></a>00309 
+<a name="l00310"></a>00310 <span class="keyword">extern</span> <a class="code" href="class_function_manager.html">FunctionManager</a> <a class="code" href="_functions_8cpp.html#a66cd6969062d58de328ce6db6cc7b1e3" title="Menadżer funkcji.">functMan</a>;
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Przyjaciele</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Wygenerowano Wed Aug 25 2010 19:55:05 dla SL/0 programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

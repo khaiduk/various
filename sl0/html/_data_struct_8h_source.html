@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>SL/0: Plik źródłowy sl0/DataStruct.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&nbsp;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>sl0/DataStruct.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="_data_struct_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#pragma once</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="stdafx_8h.html">stdafx.h</a>&quot;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &quot;<a class="code" href="_value_8h.html">Value.h</a>&quot;</span>
+<a name="l00004"></a>00004 
+<a name="l00006"></a><a class="code" href="class_data_struct_1_1_control_exception.html#adf8416e766d84360aa3b137448f0cc3c">00006</a> <span class="keyword">namespace </span>DataStruct
+<a name="l00007"></a><a class="code" href="class_data_struct_1_1_control_exception.html#a3fc2d503462cb828c151d922e3f3cb62">00007</a> {
+<a name="l00008"></a><a class="code" href="class_data_struct_1_1_control_exception.html#a5d4bb69e6f620cbcd8c514f8af236255">00008</a> 
+<a name="l00010"></a><a class="code" href="class_data_struct_1_1_control_exception.html#a0dd0ecfbe73376021002b3cceab3a365">00010</a>         <span class="keyword">class </span><a class="code" href="class_data_struct_1_1_control_exception.html" title="Wyjątek sterujący. (np. break, return).">ControlException</a>
+<a name="l00011"></a><a class="code" href="class_data_struct_1_1_control_exception.html#a74234f6f94ccba67c92180a70af8fce9">00011</a>         {
+<a name="l00012"></a>00012         <span class="keyword">public</span>:
+<a name="l00013"></a>00013                 <span class="keyword">enum</span> <a class="code" href="class_data_struct_1_1_control_exception.html#adf8416e766d84360aa3b137448f0cc3c">Type</a> {BREAK, CONTINUE, <a class="code" href="class_data_struct_1_1_control_exception.html#adf8416e766d84360aa3b137448f0cc3cab9f0cd5e3be9d11c4c9d17043f31abf2">RETURN</a>};
+<a name="l00014"></a>00014                 <a class="code" href="class_data_struct_1_1_control_exception.html#adf8416e766d84360aa3b137448f0cc3c">Type</a> <a class="code" href="class_data_struct_1_1_control_exception.html#a3fc2d503462cb828c151d922e3f3cb62">type</a>;
+<a name="l00015"></a>00015                 <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> <a class="code" href="class_data_struct_1_1_control_exception.html#a5d4bb69e6f620cbcd8c514f8af236255">value</a>;
+<a name="l00016"></a>00016                 
+<a name="l00017"></a>00017                 <a class="code" href="class_data_struct_1_1_control_exception.html#a0dd0ecfbe73376021002b3cceab3a365">ControlException</a>(<a class="code" href="class_data_struct_1_1_control_exception.html#adf8416e766d84360aa3b137448f0cc3c">Type</a> t): <a class="code" href="class_data_struct_1_1_control_exception.html#a3fc2d503462cb828c151d922e3f3cb62">type</a>(t){}
+<a name="l00018"></a><a class="code" href="class_data_struct_1_1_expression.html">00018</a>                 <a class="code" href="class_data_struct_1_1_control_exception.html#a0dd0ecfbe73376021002b3cceab3a365">ControlException</a>(<a class="code" href="class_data_struct_1_1_control_exception.html#adf8416e766d84360aa3b137448f0cc3c">Type</a> t, <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> val): <a class="code" href="class_data_struct_1_1_control_exception.html#a3fc2d503462cb828c151d922e3f3cb62">type</a>(t), <a class="code" href="class_data_struct_1_1_control_exception.html#a5d4bb69e6f620cbcd8c514f8af236255">value</a>(val){}
+<a name="l00019"></a>00019         };
+<a name="l00021"></a>00021         <span class="keyword">class </span><a class="code" href="namespace_parser.html#a74b6586057471d47c210002f1a27ddcf" title="Analizuje wyrażenie.">Expression</a>
+<a name="l00022"></a>00022         {
+<a name="l00023"></a>00023         <span class="keyword">public</span>:
+<a name="l00025"></a>00025                 <span class="keyword">virtual</span> <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> <a class="code" href="class_data_struct_1_1_expression.html#ae7e53f824f9ddf9596e866616f2594fc" title="Oblicza wyrażenie.">Eval</a>() = 0;
+<a name="l00026"></a>00026 
+<a name="l00032"></a>00032                 <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="class_data_struct_1_1_expression.html#abaddcff6c11985c6916e2d0722964fbc" title="Podaje nazwę zmiennej z wyrażenia jeśli jest l-wartością.">Lvalue</a>() = 0; <span class="comment">//if expression is l-value, returns name of string, else returns &quot;&quot; (empty string)</span>
+<a name="l00033"></a>00033 
+<a name="l00035"></a><a class="code" href="class_data_struct_1_1_expression.html#affe8479fc13c9eadcdc8e67872a2d9d8">00035</a>                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_data_struct_1_1_expression.html#ad2233881eb935900e434b1ea32c28c2f" title="Wyświetla informację debugujące.">debug</a>()=0;
+<a name="l00036"></a>00036                 
+<a name="l00038"></a>00038                 <span class="keyword">virtual</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Value::Type</a> <a class="code" href="class_data_struct_1_1_expression.html#affe8479fc13c9eadcdc8e67872a2d9d8" title="Sprawdza zgodność typów.">checkTypes</a>() { <span class="keywordflow">return</span> Value::ERROR; }
+<a name="l00039"></a><a class="code" href="class_data_struct_1_1_statement.html">00039</a>         };
+<a name="l00040"></a>00040         
+<a name="l00042"></a>00042         <span class="keyword">class </span><a class="code" href="class_data_struct_1_1_statement.html" title="Instrukcja. Wirtualna klasa na obiekt instrukcji.">Statement</a>
+<a name="l00043"></a>00043         {
+<a name="l00044"></a>00044         <span class="keyword">public</span>:
+<a name="l00046"></a>00046                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_data_struct_1_1_statement.html#a7de7d27d490dae7d5bbd1f23d4a32f93" title="Wykonuje daną instrukcję.">Exec</a>() = 0;
+<a name="l00047"></a>00047 
+<a name="l00049"></a><a class="code" href="class_data_struct_1_1_statement.html#a19c7ba392aab7ba027a7586fe3401b36">00049</a>                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_data_struct_1_1_statement.html#acf467425af6f2e170d42d2abf21e22cc" title="Wyświetla informację debugujące.">debug</a>()=0;
+<a name="l00050"></a>00050 
+<a name="l00052"></a>00052                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_data_struct_1_1_statement.html#a19c7ba392aab7ba027a7586fe3401b36" title="Sprawdza zgodność typów.">checkTypes</a>() { <span class="keywordflow">return</span> <span class="keyword">true</span>; }
+<a name="l00053"></a>00053         };
+<a name="l00054"></a>00054 }
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Przyjaciele</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Wygenerowano Wed Aug 25 2010 19:55:05 dla SL/0 programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

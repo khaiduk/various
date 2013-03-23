@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>SL/0: Dokumentacja pliku sl0/Parser.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&nbsp;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Przestrzenie nazw</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<h1>Dokumentacja pliku sl0/Parser.h</h1>  </div>
+</div>
+<div class="contents">
+<code>#include &quot;<a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_program_8h_source.html">Program.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_functions_8h_source.html">Functions.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_statements_8h_source.html">Statements.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_expressions_8h_source.html">Expressions.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_error_8h_source.html">Error.h</a>&quot;</code><br/>
+
+<p><a href="_parser_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="namespaces"></a>
+Przestrzenie nazw</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html">Parser</a></td></tr>
+
+<p><tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Analizator składniowy. </p>
+<br/></td></tr>
+</p>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_program.html">DataStruct::Program</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a9c134d0bd3c19ea0498a59d5a85278cd">Parser::Program</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje program.  <a href="#a9c134d0bd3c19ea0498a59d5a85278cd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_statement.html">DataStruct::Statement</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a730d4c0dab0bd56bda1152a3588bca5c">Parser::Statement</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje pojedynczą instrukcję.  <a href="#a730d4c0dab0bd56bda1152a3588bca5c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_function.html">DataStruct::Function</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#aa687c441261e85511f3a78d2a22de9ba">Parser::Function</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje pojedynczą funkcję.  <a href="#aa687c441261e85511f3a78d2a22de9ba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a74b6586057471d47c210002f1a27ddcf">Parser::Expression</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje wyrażenie.  <a href="#a74b6586057471d47c210002f1a27ddcf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a3b3599df4bb8c59218fd299a661779d6">Parser::ExpressionCast</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje wyrażenie rzutowania Analizuje wyrażenie w postaci int(sth);.  <a href="#a3b3599df4bb8c59218fd299a661779d6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#aa3bb1cc3fdbc7bbfaefa6c616088e3ea">Parser::ExpressionUnary</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje wyrażenie unarne.  <a href="#aa3bb1cc3fdbc7bbfaefa6c616088e3ea"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a216b1d66d2802d0283b894fa267234cc">Parser::ExpressionPostfix</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje wyrażenie postfiksowe (JESZCZE NIE GOTOWE).  <a href="#a216b1d66d2802d0283b894fa267234cc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#aed82062004e68738e24eb72de8fdbe30">Parser::ExpressionPrimary</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje wyrażenia podstawowe.  <a href="#aed82062004e68738e24eb72de8fdbe30"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpd41d8cd98f00b204e9800998ecf8427e"></a> </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a9c60f649aaae6d2d66247faf956ae6a9">Parser::ExpressionLogOr</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a9c60f649aaae6d2d66247faf956ae6a9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#aeec4d840ac12160c5ff93848469f7ed0">Parser::ExpressionLogAnd</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#aeec4d840ac12160c5ff93848469f7ed0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#ad2cb2b5470a74173eccdb20cc6bdfddf">Parser::ExpressionBitOr</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#ad2cb2b5470a74173eccdb20cc6bdfddf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a57e2db77309c6df2508f38d7f935d9ee">Parser::ExpressionBitXor</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a57e2db77309c6df2508f38d7f935d9ee"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a2427be5ea28cdcc1b439898ca28ff5b7">Parser::ExpressionBitAnd</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a2427be5ea28cdcc1b439898ca28ff5b7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a5c383f3014d2737ebfea44a6f375c51d">Parser::ExpressionEqal</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a5c383f3014d2737ebfea44a6f375c51d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a8125b294e11a4dbb8e77dbc0c401e910">Parser::ExpressionRelation</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a8125b294e11a4dbb8e77dbc0c401e910"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a6431b4cb22f3ff9dc8ce46ca41343a06">Parser::ExpressionShift</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a6431b4cb22f3ff9dc8ce46ca41343a06"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a1a616e149085d6e46254a4b9b1dd9dab">Parser::ExpressionAdd</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a1a616e149085d6e46254a4b9b1dd9dab"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a4dd52bb45a43fe93e5423fedee292b4a">Parser::ExpressionMul</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a4dd52bb45a43fe93e5423fedee292b4a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#ac0f2261d92c2b1bc1fc6117465737573">Parser::ExpressionPow</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#ac0f2261d92c2b1bc1fc6117465737573"></a><br/></td></tr>
+</table>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Przyjaciele</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Wygenerowano Wed Aug 25 2010 19:55:05 dla SL/0 programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

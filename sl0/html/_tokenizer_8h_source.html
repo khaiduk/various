@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>SL/0: Plik źródłowy sl0/Tokenizer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&nbsp;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>sl0/Tokenizer.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="_tokenizer_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#pragma once</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &quot;<a class="code" href="stdafx_8h.html">stdafx.h</a>&quot;</span>
+<a name="l00004"></a>00004 
+<a name="l00009"></a><a class="code" href="class_token.html">00009</a> <span class="keyword">class </span><a class="code" href="class_token.html" title="Reprezentacja Tokenu.">Token</a>
+<a name="l00010"></a>00010 {
+<a name="l00011"></a>00011 <span class="keyword">public</span>:
+<a name="l00013"></a><a class="code" href="class_token.html#acf70e9411196c602738c3ed2428c7137">00013</a>         <span class="keyword">enum</span> <a class="code" href="class_token.html#acf70e9411196c602738c3ed2428c7137" title="Typ tokenu.">Type</a> {IDENTIFIER, KEYWORD, OPERATOR, LITERAL, <a class="code" href="class_token.html#acf70e9411196c602738c3ed2428c7137ac45391dd0955faaa1a1f820689d3908b">ERROR</a>};
+<a name="l00014"></a><a class="code" href="class_token.html#a7e5e6513d379ca2e388273b23ea1ba4a">00014</a>         <a class="code" href="class_token.html#acf70e9411196c602738c3ed2428c7137" title="Typ tokenu.">Type</a> <a class="code" href="class_token.html#a7e5e6513d379ca2e388273b23ea1ba4a" title="Typ tokenu. np. Identyfikator lub słowo kluczowe.">type</a>; 
+<a name="l00015"></a><a class="code" href="class_token.html#a3ccc5239495549d3cc03057dd53bd676">00015</a>         <span class="keywordtype">string</span> <a class="code" href="class_token.html#a3ccc5239495549d3cc03057dd53bd676" title="Zawartość tokenu, tak jak w kodzie źródłowym.">val</a>; 
+<a name="l00016"></a>00016 
+<a name="l00021"></a><a class="code" href="class_token.html#aa3c5868ba4115f3189df6b2ac5b36f39">00021</a>         <a class="code" href="class_token.html#aa3c5868ba4115f3189df6b2ac5b36f39" title="Konstruktor Tokenu.">Token</a>():<a class="code" href="class_token.html#a7e5e6513d379ca2e388273b23ea1ba4a" title="Typ tokenu. np. Identyfikator lub słowo kluczowe.">type</a>(<a class="code" href="class_token.html#acf70e9411196c602738c3ed2428c7137ac45391dd0955faaa1a1f820689d3908b">ERROR</a>),<a class="code" href="class_token.html#a3ccc5239495549d3cc03057dd53bd676" title="Zawartość tokenu, tak jak w kodzie źródłowym.">val</a>(<span class="stringliteral">&quot;&quot;</span>){}
+<a name="l00022"></a>00022 
+<a name="l00024"></a><a class="code" href="class_token.html#a23d407d9bd1195745099f3c1bd1fc286">00024</a>         <span class="keywordtype">bool</span> <a class="code" href="class_token.html#a23d407d9bd1195745099f3c1bd1fc286" title="Sprawdzamy czy dany token jest błędny.">Error</a>(){<span class="keywordflow">return</span> <a class="code" href="class_token.html#a7e5e6513d379ca2e388273b23ea1ba4a" title="Typ tokenu. np. Identyfikator lub słowo kluczowe.">type</a>==ERROR;} 
+<a name="l00025"></a>00025 };
+<a name="l00026"></a>00026 
+<a name="l00032"></a><a class="code" href="class_tokenizer.html">00032</a> <span class="keyword">class </span><a class="code" href="class_tokenizer.html" title="Analizator składniowy.">Tokenizer</a>
+<a name="l00033"></a>00033 {
+<a name="l00034"></a>00034 <span class="keyword">private</span>:
+<a name="l00035"></a>00035         <span class="keywordtype">string</span> input;
+<a name="l00036"></a>00036         <span class="keywordtype">size_t</span> pos;
+<a name="l00037"></a>00037         <span class="keywordtype">int</span> linenum;
+<a name="l00038"></a>00038         <a class="code" href="class_token.html" title="Reprezentacja Tokenu.">Token</a> currentToken;
+<a name="l00039"></a>00039         <span class="keywordtype">bool</span> isAlpha(<span class="keywordtype">char</span> a){ <span class="keywordflow">return</span> ( a&gt;=<span class="charliteral">&#39;a&#39;</span> &amp;&amp; a&lt;=<span class="charliteral">&#39;z&#39;</span> ) || ( a&gt;=<span class="charliteral">&#39;A&#39;</span> &amp;&amp; a&lt;=<span class="charliteral">&#39;Z&#39;</span> ); }
+<a name="l00040"></a>00040         <span class="keywordtype">bool</span> isNum(<span class="keywordtype">char</span> a)      { <span class="keywordflow">return</span> a&gt;=<span class="charliteral">&#39;0&#39;</span> &amp;&amp; a&lt;=<span class="charliteral">&#39;9&#39;</span>; }
+<a name="l00041"></a>00041         <span class="keywordtype">void</span> next(); <span class="comment">// Pobiera następny token</span>
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 <span class="keyword">public</span>:
+<a name="l00048"></a><a class="code" href="class_tokenizer.html#acf2f3f140a2c09e62be71c1fb5a62893">00048</a>         <a class="code" href="class_tokenizer.html#acf2f3f140a2c09e62be71c1fb5a62893" title="Konstruktor tokenizera.">Tokenizer</a>(<span class="keywordtype">string</span> code): input(code), pos(0), linenum(0)
+<a name="l00049"></a>00049         {
+<a name="l00050"></a>00050                 next();
+<a name="l00051"></a>00051         }
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053         <a class="code" href="class_token.html" title="Reprezentacja Tokenu.">Token</a> <a class="code" href="class_tokenizer.html#ad1c7c0a8f85fe189acefe26b857b7375" title="Pobiera następny token.">getToken</a>();
+<a name="l00054"></a>00054         <a class="code" href="class_token.html" title="Reprezentacja Tokenu.">Token</a> <a class="code" href="class_tokenizer.html#a52a6864fdded60dc92ce14146ac88c96" title="Podgląda następny token.">peekToken</a>();
+<a name="l00055"></a>00055 };
+<a name="l00056"></a>00056 
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Przyjaciele</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Wygenerowano Wed Aug 25 2010 19:55:05 dla SL/0 programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

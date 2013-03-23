@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  Varibles.cpp
+  Value.cpp
+  Tokenizer.cpp
+  Parser.cpp
+  main.cpp
+  Functions.cpp
+  Error.cpp
+  Generating Code...
+  sl0.vcxproj -> D:\VisualStudioProjects\sl0\Debug\sl0.exe

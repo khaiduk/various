@@ -1,0 +1,93 @@
+extern void main()
+{
+//ci¹g fibonaciego
+	char[] source = "
++++++++++++
+>+>>>>++++++++++++++++++++++++++++++++++++++++++++
+>++++++++++++++++++++++++++++++++<<<<<<[>[>>>>>>+>
++<<<<<<<-]>>>>>>>[<<<<<<<+>>>>>>>-]<[>++++++++++[-
+<-[>>+>+<<<-]>>>[<<<+>>>-]+<[>[-]<[-]]>[<<[>>>+<<<
+-]>>[-]]<<]>>>[>>+>+<<<-]>>>[<<<+>>>-]+<[>[-]<[-]]
+>[<<+>>[-]]<<<<<<<]>>>>>[+++++++++++++++++++++++++
++++++++++++++++++++++++.[-]]++++++++++<[->-<]>++++
+++++++++++++++++++++++++++++++++++++++++++++.[-]<<
+<<<<<<<<<<[>>>+>+<<<<-]>>>>[<<<<+>>>>-]<-[>>.>.<<<
+[-]]<<[>>+>+<<<-]>>>[<<<+>>>-]<<[<+>-]>[<+>-]<<<-]
+";
+	char[] in = "";
+	int p;
+	int[] memory;
+	int[] jumpTo;
+	int stack[], stackCount=0;
+	for(int sourcePos = 0; sourcePos < sizeof(source); sourcePos++)
+	{
+		if(source[sourcePos] == '[')
+		{
+			stack[stackCount++]=sourcePos;
+		}
+		else if(source[sourcePos] == ']')
+		{
+			if(stackCount == 0)
+			{
+				message("] without [");
+				return;
+			}
+			jumpTo[sourcePos]=stack[--stackCount];
+			jumpTo[stack[stackCount]]=sourcePos;
+		}
+		else jumpTo[sourcePos]=-1;
+	}
+	if(stackCount>0) message("[ without ]");
+
+	in[sizeof(in)]=0;
+	for(int sourcePos = 0; sourcePos < sizeof(source); sourcePos++)
+	{
+		if(source[sourcePos] == '>')
+		{
+			p++;
+		}
+		else if(source[sourcePos] == '<')
+		{
+			p--;
+			if(p<0) p=0;
+		}
+		else if(source[sourcePos] == '+')
+		{
+			memory[p] +=1;
+		}
+		else if(source[sourcePos] == '-')
+		{
+			memory[p] -=1;
+		}
+		else if(source[sourcePos] == '.')
+		{
+			message("OUT: ",char(memory[p])," integer: ",int(memory[p]));
+		}
+		else if(source[sourcePos] == ',')
+		{
+			message("IN:  ", char(in[0])," integer: ",int(in[0]));
+			memory[p] = in[0];
+			int i=0;
+			while(in[i] != 0 )
+			{
+				in[i]=in[i+1];
+				i++;
+			}
+		}
+		else if(source[sourcePos] == '[')
+		{
+			if(memory[p]==0)
+				sourcePos=jumpTo[sourcePos];
+		}
+		else if(source[sourcePos] == ']')
+		{
+			sourcePos=jumpTo[sourcePos]-1;
+		}
+		else if(source[sourcePos] == '#')
+		{
+			message(char(memory[0]),'|',char(memory[1]),'|',char(memory[2]),'|',char(memory[3]),'|',
+				char(memory[4]),'|',char(memory[5]),'|',char(memory[6]),'|',char(memory[7]),'|',
+				char(memory[8]),'|',char(memory[9]));
+		}
+	}
+}

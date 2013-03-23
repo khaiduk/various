@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>SL/0: Plik źródłowy sl0/Varibles.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&nbsp;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>sl0/Varibles.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="_varibles_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#pragma once</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &quot;<a class="code" href="stdafx_8h.html">StdAfx.h</a>&quot;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="_value_8h.html">Value.h</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="_error_8h.html">Error.h</a>&quot;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a><a class="code" href="struct_varible.html">00007</a> <span class="keyword">struct </span><a class="code" href="struct_varible.html">Varible</a>
+<a name="l00008"></a>00008 {
+<a name="l00009"></a><a class="code" href="struct_varible.html#a8b4129b2c98bbeef89adf4a1bee39064">00009</a>         <span class="keywordtype">string</span> <a class="code" href="struct_varible.html#a8b4129b2c98bbeef89adf4a1bee39064">name</a>;
+<a name="l00010"></a><a class="code" href="struct_varible.html#a8cd7981d8bbd1228b5eebbfb6484b704">00010</a>         <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> <a class="code" href="struct_varible.html#a8cd7981d8bbd1228b5eebbfb6484b704">value</a>;
+<a name="l00011"></a>00011 };
+<a name="l00012"></a>00012 
+<a name="l00017"></a><a class="code" href="class_varible_manager.html">00017</a> <span class="keyword">class </span><a class="code" href="class_varible_manager.html" title="Klasa menadżera zmiennych.">VaribleManager</a>
+<a name="l00018"></a>00018 {
+<a name="l00019"></a>00019         vector &lt;Varible&gt; vars;
+<a name="l00020"></a>00020         vector &lt;unsigned int&gt; scope;
+<a name="l00021"></a>00021         <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a> err;
+<a name="l00022"></a>00022 <span class="keyword">public</span>:
+<a name="l00023"></a>00023 
+<a name="l00029"></a><a class="code" href="class_varible_manager.html#a2a676efd8f2b8c45025296353e937ea5">00029</a>         <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value::Value</a>&amp; <a class="code" href="class_varible_manager.html#a2a676efd8f2b8c45025296353e937ea5" title="Pozwala na dostęp do zmiennej.">operator[]</a>(<span class="keywordtype">string</span> name)
+<a name="l00030"></a>00030         {
+<a name="l00031"></a>00031                 <span class="keywordflow">if</span>(name == <span class="stringliteral">&quot;&quot;</span>)
+<a name="l00032"></a>00032                 {
+<a name="l00033"></a>00033                         <a class="code" href="_error_8cpp.html#a5e7e27258e59f4c4a80e5fb757024a2d" title="Obiekt do obsługi błędów.">error</a>.<a class="code" href="class_error.html#aed8a52accd4b4c47533c78139664a2bb" title="Zgłasza błąd.">error</a>(<span class="stringliteral">&quot;Must be l-value&quot;</span>);
+<a name="l00034"></a>00034                         <span class="keywordflow">return</span> err;
+<a name="l00035"></a>00035                 }
+<a name="l00036"></a>00036                 <span class="keywordflow">else</span>
+<a name="l00037"></a>00037                 {
+<a name="l00038"></a>00038                         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=vars.size()-1;i&gt;=0;i--)
+<a name="l00039"></a>00039                         {
+<a name="l00040"></a>00040                                 <span class="keywordflow">if</span>(vars[i].name == name)
+<a name="l00041"></a>00041                                         <span class="keywordflow">return</span> vars[i].value;
+<a name="l00042"></a>00042                         }
+<a name="l00043"></a>00043                         <span class="comment">//var not found</span>
+<a name="l00044"></a>00044                         <a class="code" href="_error_8cpp.html#a5e7e27258e59f4c4a80e5fb757024a2d" title="Obiekt do obsługi błędów.">error</a>.<a class="code" href="class_error.html#aed8a52accd4b4c47533c78139664a2bb" title="Zgłasza błąd.">error</a>(<span class="stringliteral">&quot;Varible does not exist: &quot;</span>+name);
+<a name="l00045"></a>00045                         <span class="keywordflow">return</span> err;
+<a name="l00046"></a>00046                 }
+<a name="l00047"></a>00047         }
+<a name="l00048"></a>00048 
+<a name="l00054"></a><a class="code" href="class_varible_manager.html#aca8591eb08695d2a9159688a11f17c79">00054</a>         <span class="keywordtype">bool</span> <a class="code" href="class_varible_manager.html#aca8591eb08695d2a9159688a11f17c79" title="Sprawdza czy nazwa zmiennej jest poprawna i zmienna istnieje.">check</a>(<span class="keywordtype">string</span> name)
+<a name="l00055"></a>00055         {
+<a name="l00056"></a>00056                 <span class="keywordflow">if</span>(name == <span class="stringliteral">&quot;&quot;</span>)
+<a name="l00057"></a>00057                 {
+<a name="l00058"></a>00058                         <a class="code" href="_error_8cpp.html#a5e7e27258e59f4c4a80e5fb757024a2d" title="Obiekt do obsługi błędów.">error</a>.<a class="code" href="class_error.html#aed8a52accd4b4c47533c78139664a2bb" title="Zgłasza błąd.">error</a>(<span class="stringliteral">&quot;Must be l-value&quot;</span>);
+<a name="l00059"></a>00059                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00060"></a>00060                 }
+<a name="l00061"></a>00061                 <span class="keywordflow">else</span>
+<a name="l00062"></a>00062                 {
+<a name="l00063"></a>00063                         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=static_cast&lt;int&gt;(vars.size())-1;i&gt;=0;i--)
+<a name="l00064"></a>00064                         {
+<a name="l00065"></a>00065                                 <span class="keywordflow">if</span>(vars[i].name == name)
+<a name="l00066"></a>00066                                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00067"></a>00067                         }
+<a name="l00068"></a>00068                         <a class="code" href="_error_8cpp.html#a5e7e27258e59f4c4a80e5fb757024a2d" title="Obiekt do obsługi błędów.">error</a>.<a class="code" href="class_error.html#aed8a52accd4b4c47533c78139664a2bb" title="Zgłasza błąd.">error</a>(<span class="stringliteral">&quot;Varible not found: &quot;</span>+name);
+<a name="l00069"></a>00069                         <span class="keywordflow">return</span> <span class="keyword">false</span>;<span class="comment">//var not found</span>
+<a name="l00070"></a>00070                 }
+<a name="l00071"></a>00071         }
+<a name="l00072"></a>00072 
+<a name="l00077"></a><a class="code" href="class_varible_manager.html#ae097f4ce40b72c55eeca7df9b6623c7c">00077</a>         <span class="keywordtype">void</span> <a class="code" href="class_varible_manager.html#ae097f4ce40b72c55eeca7df9b6623c7c" title="Dodaje zmienną.">add</a>(<span class="keywordtype">string</span> name)
+<a name="l00078"></a>00078         {
+<a name="l00079"></a>00079                 <span class="keywordtype">int</span> scopeFirst=scope[scope.size()-1];
+<a name="l00080"></a>00080                 <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=static_cast&lt;int&gt;(vars.size())-1;i&gt;=scopeFirst;i--)
+<a name="l00081"></a>00081                 {
+<a name="l00082"></a>00082                         <span class="keywordflow">if</span>(vars[i].name == name)
+<a name="l00083"></a>00083                         {
+<a name="l00084"></a>00084                                 <a class="code" href="_error_8cpp.html#a5e7e27258e59f4c4a80e5fb757024a2d" title="Obiekt do obsługi błędów.">error</a>.<a class="code" href="class_error.html#aed8a52accd4b4c47533c78139664a2bb" title="Zgłasza błąd.">error</a>(<span class="stringliteral">&quot;Varible alredy exist in this scope: &quot;</span>+name);
+<a name="l00085"></a>00085                                 <span class="keywordflow">return</span>;
+<a name="l00086"></a>00086                         }
+<a name="l00087"></a>00087                 }
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089                 <a class="code" href="struct_varible.html">Varible</a> newvar;
+<a name="l00090"></a>00090                 newvar.<a class="code" href="struct_varible.html#a8b4129b2c98bbeef89adf4a1bee39064">name</a> = name;
+<a name="l00091"></a>00091                 vars.push_back(newvar);
+<a name="l00092"></a>00092         }
+<a name="l00093"></a>00093                 
+<a name="l00095"></a><a class="code" href="class_varible_manager.html#a22de262bc04e1ffb4e2cc782ab129317">00095</a>         <span class="keywordtype">void</span> <a class="code" href="class_varible_manager.html#a22de262bc04e1ffb4e2cc782ab129317" title="Wyświetla informację debugujące.">debug</a>()
+<a name="l00096"></a>00096         {
+<a name="l00097"></a>00097                 <span class="keywordtype">string</span> typeNames[Value::ERROR];
+<a name="l00098"></a>00098                 typeNames[Value::BOOL] = <span class="stringliteral">&quot;BOOL&quot;</span>;
+<a name="l00099"></a>00099                 typeNames[Value::CHAR] = <span class="stringliteral">&quot;CHAR&quot;</span>;
+<a name="l00100"></a>00100                 typeNames[Value::FLOAT] = <span class="stringliteral">&quot;FLOAT&quot;</span>;
+<a name="l00101"></a>00101                 typeNames[Value::INT] = <span class="stringliteral">&quot;INT&quot;</span>;
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103                 <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;vars.size();i++)
+<a name="l00104"></a>00104                 {
+<a name="l00105"></a>00105                         cout &lt;&lt; <span class="stringliteral">&quot;[ &quot;</span> &lt;&lt; vars[i].name &lt;&lt; <span class="stringliteral">&quot; (&quot;</span>&lt;&lt; typeNames[vars[i].value.type] &lt;&lt;<span class="stringliteral">&quot;) ] = &quot;</span> &lt;&lt; vars[i].value &lt;&lt; endl;
+<a name="l00106"></a>00106                 }
+<a name="l00107"></a>00107         }
+<a name="l00108"></a>00108         
+<a name="l00110"></a><a class="code" href="class_varible_manager.html#a22184fb5278dff55a5e63ac05d22fa78">00110</a>         <span class="keywordtype">void</span> <a class="code" href="class_varible_manager.html#a22184fb5278dff55a5e63ac05d22fa78" title="Rozpocznij nowy zakres zmiennych.">beginScope</a>()
+<a name="l00111"></a>00111         {
+<a name="l00112"></a>00112                 scope.push_back(vars.size());
+<a name="l00113"></a>00113         }
+<a name="l00114"></a>00114 
+<a name="l00116"></a><a class="code" href="class_varible_manager.html#a8d6b4738dd94b85a91126e7889668eba">00116</a>         <span class="keywordtype">void</span> <a class="code" href="class_varible_manager.html#a8d6b4738dd94b85a91126e7889668eba" title="Zakończ bieżący zakres zmiennych.">endScope</a>()
+<a name="l00117"></a>00117         {
+<a name="l00118"></a>00118                 <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> toSize=scope[scope.size()-1];
+<a name="l00119"></a>00119                 scope.pop_back();
+<a name="l00120"></a>00120                 <span class="keywordflow">while</span>(vars.size()&gt;toSize)
+<a name="l00121"></a>00121                         vars.pop_back();
+<a name="l00122"></a>00122         }
+<a name="l00123"></a>00123 };
+<a name="l00124"></a>00124 <span class="keyword">extern</span> <a class="code" href="class_varible_manager.html" title="Klasa menadżera zmiennych.">VaribleManager</a> <a class="code" href="_varibles_8cpp.html#a7649f97149c6207f32116e4b4746f6c6" title="Menadżer zmiennych.">varMan</a>;
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Przyjaciele</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Wygenerowano Wed Aug 25 2010 19:55:05 dla SL/0 programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

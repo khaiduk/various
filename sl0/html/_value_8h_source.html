@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>SL/0: Plik źródłowy sl0/Value.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&nbsp;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>sl0/Value.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="_value_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#pragma once</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="stdafx_8h.html">stdafx.h</a>&quot;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &quot;<a class="code" href="_error_8h.html">Error.h</a>&quot;</span>
+<a name="l00004"></a>00004 
+<a name="l00010"></a><a class="code" href="namespace_value.html">00010</a> <span class="keyword">namespace </span><a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value</a>
+<a name="l00011"></a>00011 {
+<a name="l00013"></a><a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541">00013</a>         <span class="keyword">enum</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Type</a> { INT, BOOL, FLOAT, CHAR, <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a065354a0f7f71d253b86ab6ae260c141">ERROR</a> };
+<a name="l00014"></a>00014 
+<a name="l00016"></a><a class="code" href="class_value_1_1_value.html">00016</a>         <span class="keyword">class </span><a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value</a>
+<a name="l00017"></a>00017         {
+<a name="l00018"></a>00018         <span class="keyword">public</span>:
+<a name="l00020"></a><a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc">00020</a>                 <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Type</a> <a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>;
+<a name="l00022"></a><a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe">00022</a>                 boost::any <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>;
+<a name="l00023"></a>00023                 
+<a name="l00028"></a><a class="code" href="class_value_1_1_value.html#ace0160f02aae678e8f716bea447ee609">00028</a>                 <a class="code" href="class_value_1_1_value.html#ace0160f02aae678e8f716bea447ee609" title="Konstruktor wartości.">Value</a>()
+<a name="l00029"></a>00029                 {
+<a name="l00030"></a>00030                         <a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>=ERROR;
+<a name="l00031"></a>00031                         <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>=0;
+<a name="l00032"></a>00032                 }
+<a name="l00033"></a>00033                 
+<a name="l00038"></a><a class="code" href="class_value_1_1_value.html#ab80c378424e33054f476238ac05d8590">00038</a>                 <a class="code" href="class_value_1_1_value.html#ace0160f02aae678e8f716bea447ee609" title="Konstruktor wartości.">Value</a>(<span class="keywordtype">string</span> s)
+<a name="l00039"></a>00039                 {
+<a name="l00040"></a>00040                         <span class="keywordflow">if</span>(s[0]==<span class="charliteral">&#39;\&#39;&#39;</span>)
+<a name="l00041"></a>00041                         {
+<a name="l00042"></a>00042                                 <a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a> = CHAR;
+<a name="l00043"></a>00043                                 <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a> = s[1];
+<a name="l00044"></a>00044                         }
+<a name="l00045"></a>00045                         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(s==<span class="stringliteral">&quot;true&quot;</span> || s==<span class="stringliteral">&quot;false&quot;</span>)
+<a name="l00046"></a>00046                         {
+<a name="l00047"></a>00047                                 <a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a> = BOOL;
+<a name="l00048"></a>00048                                 <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>=bool(s==<span class="stringliteral">&quot;true&quot;</span>);
+<a name="l00049"></a>00049                         }
+<a name="l00050"></a>00050                         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(s.find(<span class="charliteral">&#39;.&#39;</span>)!=string::npos)
+<a name="l00051"></a>00051                         {
+<a name="l00052"></a>00052                                 <a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a> = FLOAT;
+<a name="l00053"></a>00053                                 <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>=boost::lexical_cast&lt;<span class="keywordtype">float</span>&gt;(s);
+<a name="l00054"></a>00054                         }
+<a name="l00055"></a>00055                         <span class="keywordflow">else</span>
+<a name="l00056"></a>00056                         {
+<a name="l00057"></a>00057                                 <a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a> = INT;
+<a name="l00058"></a>00058                                 <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>=boost::lexical_cast&lt;<span class="keywordtype">int</span>&gt;(s);
+<a name="l00059"></a>00059                         }
+<a name="l00060"></a>00060                 }
+<a name="l00061"></a>00061 
+<a name="l00064"></a><a class="code" href="class_value_1_1_value.html#afe6424fa4560544bd6f11928524b5218">00064</a>                 <span class="keywordtype">int</span> <a class="code" href="class_value_1_1_value.html#afe6424fa4560544bd6f11928524b5218">getInt</a>(){
+<a name="l00065"></a>00065                         <span class="keywordflow">switch</span>(<a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>)
+<a name="l00066"></a>00066                         {
+<a name="l00067"></a>00067                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cc14bd8a55f68aa29dfbfff2d24fa17">INT</a>:   <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">int</span>&gt;  (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00068"></a>00068                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cda15762597115aac7631f7029f1e3d">BOOL</a>:  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">bool</span>&gt; (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00069"></a>00069                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a1e89dc14aff07ac0620048b5b96595a4">FLOAT</a>: <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">float</span>&gt;(<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00070"></a>00070                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a9c614a4bd2f8a4c107d1b82d0a73c768">CHAR</a>:  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">char</span>&gt; (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00071"></a>00071                         <span class="keywordflow">default</span>: <span class="keywordflow">return</span> 0;
+<a name="l00072"></a>00072                         }
+<a name="l00073"></a>00073                 }
+<a name="l00074"></a><a class="code" href="class_value_1_1_value.html#a05fa1a495670973d5737d2eaf46ba6aa">00074</a>                 <span class="keywordtype">bool</span> <a class="code" href="class_value_1_1_value.html#a05fa1a495670973d5737d2eaf46ba6aa">getBool</a>(){
+<a name="l00075"></a>00075                         <span class="keywordflow">switch</span>(<a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>)
+<a name="l00076"></a>00076                         {
+<a name="l00077"></a>00077                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cc14bd8a55f68aa29dfbfff2d24fa17">INT</a>:   <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">int</span>&gt;  (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>)!=0);
+<a name="l00078"></a>00078                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cda15762597115aac7631f7029f1e3d">BOOL</a>:  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">bool</span>&gt; (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00079"></a>00079                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a1e89dc14aff07ac0620048b5b96595a4">FLOAT</a>: <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">float</span>&gt;(<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>)!=0.0);
+<a name="l00080"></a>00080                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a9c614a4bd2f8a4c107d1b82d0a73c768">CHAR</a>:  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">char</span>&gt; (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>)!=<span class="charliteral">&#39;\0&#39;</span>);
+<a name="l00081"></a>00081                         <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00082"></a>00082                         }
+<a name="l00083"></a>00083                 }
+<a name="l00084"></a><a class="code" href="class_value_1_1_value.html#a3451d30486eaa1ad291bc87f1cd32f5c">00084</a>                 <span class="keywordtype">char</span> <a class="code" href="class_value_1_1_value.html#a3451d30486eaa1ad291bc87f1cd32f5c">getChar</a>(){
+<a name="l00085"></a>00085                         <span class="keywordflow">switch</span>(<a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>)
+<a name="l00086"></a>00086                         {
+<a name="l00087"></a>00087                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cc14bd8a55f68aa29dfbfff2d24fa17">INT</a>:   <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">int</span>&gt;  (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00088"></a>00088                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cda15762597115aac7631f7029f1e3d">BOOL</a>:  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">bool</span>&gt; (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00089"></a>00089                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a1e89dc14aff07ac0620048b5b96595a4">FLOAT</a>: <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">float</span>&gt;(<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00090"></a>00090                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a9c614a4bd2f8a4c107d1b82d0a73c768">CHAR</a>:  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">char</span>&gt; (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00091"></a>00091                         <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <span class="charliteral">&#39;\0&#39;</span>;
+<a name="l00092"></a>00092                         }
+<a name="l00093"></a>00093                 }
+<a name="l00094"></a><a class="code" href="class_value_1_1_value.html#ac99817b6242c89645bf3c501bf000868">00094</a>                 <span class="keywordtype">float</span> <a class="code" href="class_value_1_1_value.html#ac99817b6242c89645bf3c501bf000868">getFloat</a>(){
+<a name="l00095"></a>00095                         <span class="keywordflow">switch</span>(<a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>)
+<a name="l00096"></a>00096                         {
+<a name="l00097"></a>00097                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cc14bd8a55f68aa29dfbfff2d24fa17">INT</a>:   <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">int</span>&gt;  (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00098"></a>00098                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cda15762597115aac7631f7029f1e3d">BOOL</a>:  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">bool</span>&gt; (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00099"></a>00099                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a1e89dc14aff07ac0620048b5b96595a4">FLOAT</a>: <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">float</span>&gt;(<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00100"></a>00100                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a9c614a4bd2f8a4c107d1b82d0a73c768">CHAR</a>:  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(boost::any_cast&lt;<span class="keywordtype">char</span>&gt; (<a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>));
+<a name="l00101"></a>00101                         <span class="keywordflow">default</span>: <span class="keywordflow">return</span> 0.0;
+<a name="l00102"></a>00102                         }
+<a name="l00103"></a>00103                 }
+<a name="l00105"></a>00105 
+<a name="l00111"></a><a class="code" href="class_value_1_1_value.html#ae290c99bb7ec395ef28caa41eaaf223e">00111</a>                 <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value</a> <a class="code" href="class_value_1_1_value.html#ae290c99bb7ec395ef28caa41eaaf223e" title="Rzutuje wartość na dany typ.">cast</a>(<a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Type</a> tgtType)
+<a name="l00112"></a>00112                 {
+<a name="l00113"></a>00113                         <span class="keywordflow">if</span>(tgtType==<a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cc14bd8a55f68aa29dfbfff2d24fa17">INT</a>)
+<a name="l00114"></a>00114                         {
+<a name="l00115"></a>00115                                 <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a> = <a class="code" href="class_value_1_1_value.html#afe6424fa4560544bd6f11928524b5218">getInt</a>();
+<a name="l00116"></a>00116                                 <a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>=INT;
+<a name="l00117"></a>00117                         }
+<a name="l00118"></a>00118                         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(tgtType==<a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cda15762597115aac7631f7029f1e3d">BOOL</a>)
+<a name="l00119"></a>00119                         {
+<a name="l00120"></a>00120                                 <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a> = <a class="code" href="class_value_1_1_value.html#a05fa1a495670973d5737d2eaf46ba6aa">getBool</a>();
+<a name="l00121"></a>00121                                 <a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>=BOOL;
+<a name="l00122"></a>00122                         }
+<a name="l00123"></a>00123                         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(tgtType==<a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a9c614a4bd2f8a4c107d1b82d0a73c768">CHAR</a>)
+<a name="l00124"></a>00124                         {
+<a name="l00125"></a>00125                                 <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a> = <a class="code" href="class_value_1_1_value.html#a3451d30486eaa1ad291bc87f1cd32f5c">getChar</a>();
+<a name="l00126"></a>00126                                 <a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>=CHAR;
+<a name="l00127"></a>00127                         }
+<a name="l00128"></a>00128                         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(tgtType==<a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a1e89dc14aff07ac0620048b5b96595a4">FLOAT</a>)
+<a name="l00129"></a>00129                         {
+<a name="l00130"></a>00130                                 <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a> = <a class="code" href="class_value_1_1_value.html#ac99817b6242c89645bf3c501bf000868">getFloat</a>();
+<a name="l00131"></a>00131                                 <a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>=FLOAT;
+<a name="l00132"></a>00132                         }
+<a name="l00133"></a>00133                         <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00134"></a>00134                 }
+<a name="l00135"></a>00135         
+<a name="l00136"></a><a class="code" href="class_value_1_1_value.html#a897266f0760f759b9dea6e11fe8b31e9">00136</a>                 <span class="keyword">friend</span> ostream&amp; <a class="code" href="class_value_1_1_value.html#a897266f0760f759b9dea6e11fe8b31e9">operator&lt;&lt;</a>(ostream &amp; stream, <a class="code" href="class_value_1_1_value.html" title="Reprezentacja wartości.">Value</a>&amp; <a class="code" href="class_value_1_1_value.html#aa2c97fb90ebe0d02985d8667f445eabe" title="Wartość.">val</a>)
+<a name="l00137"></a>00137                 {
+<a name="l00138"></a>00138                         <span class="keywordflow">switch</span>(val.<a class="code" href="class_value_1_1_value.html#ad96c81316093d5923102ad1f14156fcc" title="Typ wartości.">type</a>)
+<a name="l00139"></a>00139                         {
+<a name="l00140"></a>00140                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cda15762597115aac7631f7029f1e3d">BOOL</a>: stream &lt;&lt; val.<a class="code" href="class_value_1_1_value.html#a05fa1a495670973d5737d2eaf46ba6aa">getBool</a>(); <span class="keywordflow">break</span>;
+<a name="l00141"></a>00141                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a9c614a4bd2f8a4c107d1b82d0a73c768">CHAR</a>: stream &lt;&lt; val.<a class="code" href="class_value_1_1_value.html#a3451d30486eaa1ad291bc87f1cd32f5c">getChar</a>(); <span class="keywordflow">break</span>;
+<a name="l00142"></a>00142                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a1e89dc14aff07ac0620048b5b96595a4">FLOAT</a>:stream &lt;&lt; val.<a class="code" href="class_value_1_1_value.html#ac99817b6242c89645bf3c501bf000868">getFloat</a>(); <span class="keywordflow">break</span>;
+<a name="l00143"></a>00143                         <span class="keywordflow">case</span> <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541a5cc14bd8a55f68aa29dfbfff2d24fa17">INT</a>: stream &lt;&lt; val.<a class="code" href="class_value_1_1_value.html#afe6424fa4560544bd6f11928524b5218">getInt</a>(); <span class="keywordflow">break</span>;
+<a name="l00144"></a>00144                         <span class="keywordflow">default</span>: stream &lt;&lt; <span class="stringliteral">&quot;???&quot;</span>;
+<a name="l00145"></a>00145                         }
+<a name="l00146"></a>00146                 <span class="keywordflow">return</span> stream;
+<a name="l00147"></a>00147                 }
+<a name="l00148"></a>00148         };
+<a name="l00149"></a>00149         
+<a name="l00157"></a>00157         Value <a class="code" href="namespace_value.html#ae4bd016cb6f27433137adbf068d276f1" title="Wykonuje daną operację na dwóch wartościach.">op</a>(<span class="keywordtype">string</span> opName, Value a, Value b);
+<a name="l00158"></a>00158         
+<a name="l00165"></a>00165         Value <a class="code" href="namespace_value.html#ae4bd016cb6f27433137adbf068d276f1" title="Wykonuje daną operację na dwóch wartościach.">op</a>(<span class="keywordtype">string</span> opName, Value a);
+<a name="l00166"></a>00166         
+<a name="l00174"></a>00174         <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Type</a> <a class="code" href="namespace_value.html#a76c85909f183de8d0057f7fbe94a73d9" title="Sprawdza zgodność typów.">checkTypes</a>(<span class="keywordtype">string</span> opName, <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Type</a> a, <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Type</a> b);
+<a name="l00175"></a>00175 
+<a name="l00182"></a>00182         <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Type</a> <a class="code" href="namespace_value.html#a76c85909f183de8d0057f7fbe94a73d9" title="Sprawdza zgodność typów.">checkTypes</a>(<span class="keywordtype">string</span> opName, <a class="code" href="namespace_value.html#a669e0b7bc64c01dbec39297930398541" title="Typ wartości.">Type</a> a);
+<a name="l00183"></a>00183 }
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Przyjaciele</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Wygenerowano Wed Aug 25 2010 19:55:05 dla SL/0 programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

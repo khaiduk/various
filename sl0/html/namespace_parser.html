@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>SL/0: Dokumentacja przestrzeni nazw Parser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li class="current"><a href="namespaces.html"><span>Przestrzenie&nbsp;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="namespaces.html"><span>Lista&nbsp;przestrzeni&nbsp;nazw</span></a></li>
+      <li><a href="namespacemembers.html"><span>Składowe&nbsp;przestrzeni&nbsp;nazw</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<h1>Dokumentacja przestrzeni nazw Parser</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Analizator składniowy.  
+<a href="#_details">Więcej...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_program.html">DataStruct::Program</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a9c134d0bd3c19ea0498a59d5a85278cd">Program</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje program.  <a href="#a9c134d0bd3c19ea0498a59d5a85278cd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_statement.html">DataStruct::Statement</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a730d4c0dab0bd56bda1152a3588bca5c">Statement</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje pojedynczą instrukcję.  <a href="#a730d4c0dab0bd56bda1152a3588bca5c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_function.html">DataStruct::Function</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#aa687c441261e85511f3a78d2a22de9ba">Function</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje pojedynczą funkcję.  <a href="#aa687c441261e85511f3a78d2a22de9ba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a74b6586057471d47c210002f1a27ddcf">Expression</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje wyrażenie.  <a href="#a74b6586057471d47c210002f1a27ddcf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a3b3599df4bb8c59218fd299a661779d6">ExpressionCast</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje wyrażenie rzutowania Analizuje wyrażenie w postaci int(sth);.  <a href="#a3b3599df4bb8c59218fd299a661779d6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#aa3bb1cc3fdbc7bbfaefa6c616088e3ea">ExpressionUnary</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje wyrażenie unarne.  <a href="#aa3bb1cc3fdbc7bbfaefa6c616088e3ea"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a216b1d66d2802d0283b894fa267234cc">ExpressionPostfix</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje wyrażenie postfiksowe (JESZCZE NIE GOTOWE).  <a href="#a216b1d66d2802d0283b894fa267234cc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#aed82062004e68738e24eb72de8fdbe30">ExpressionPrimary</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje wyrażenia podstawowe.  <a href="#aed82062004e68738e24eb72de8fdbe30"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpd41d8cd98f00b204e9800998ecf8427e"></a> </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a9c60f649aaae6d2d66247faf956ae6a9">ExpressionLogOr</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a9c60f649aaae6d2d66247faf956ae6a9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#aeec4d840ac12160c5ff93848469f7ed0">ExpressionLogAnd</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#aeec4d840ac12160c5ff93848469f7ed0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#ad2cb2b5470a74173eccdb20cc6bdfddf">ExpressionBitOr</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#ad2cb2b5470a74173eccdb20cc6bdfddf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a57e2db77309c6df2508f38d7f935d9ee">ExpressionBitXor</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a57e2db77309c6df2508f38d7f935d9ee"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a2427be5ea28cdcc1b439898ca28ff5b7">ExpressionBitAnd</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a2427be5ea28cdcc1b439898ca28ff5b7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a5c383f3014d2737ebfea44a6f375c51d">ExpressionEqal</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a5c383f3014d2737ebfea44a6f375c51d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a8125b294e11a4dbb8e77dbc0c401e910">ExpressionRelation</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a8125b294e11a4dbb8e77dbc0c401e910"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a6431b4cb22f3ff9dc8ce46ca41343a06">ExpressionShift</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a6431b4cb22f3ff9dc8ce46ca41343a06"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a1a616e149085d6e46254a4b9b1dd9dab">ExpressionAdd</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a1a616e149085d6e46254a4b9b1dd9dab"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#a4dd52bb45a43fe93e5423fedee292b4a">ExpressionMul</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#a4dd52bb45a43fe93e5423fedee292b4a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_parser.html#ac0f2261d92c2b1bc1fc6117465737573">ExpressionPow</a> (<a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;tokenizer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja analizująca wyrażenie.  <a href="#ac0f2261d92c2b1bc1fc6117465737573"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Opis szczegółowy</h2>
+<p>Analizator składniowy. </p>
+<p>Przestrzeń nazw zawierająca funkcje analizatora składniowego. Funkcje są wywoływane rekurencyjnie, zwracając odpowienie struktury danych (DataStuct). </p>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a74b6586057471d47c210002f1a27ddcf"></a><!-- doxytag: member="Parser::Expression" ref="a74b6586057471d47c210002f1a27ddcf" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::Expression </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Analizuje wyrażenie. </p>
+<p>Analizuje wyrażenie przypisania. Wywołuje kolejne funkcje analizujące wyrażenie. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a616e149085d6e46254a4b9b1dd9dab"></a><!-- doxytag: member="Parser::ExpressionAdd" ref="a1a616e149085d6e46254a4b9b1dd9dab" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionAdd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2427be5ea28cdcc1b439898ca28ff5b7"></a><!-- doxytag: member="Parser::ExpressionBitAnd" ref="a2427be5ea28cdcc1b439898ca28ff5b7" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionBitAnd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad2cb2b5470a74173eccdb20cc6bdfddf"></a><!-- doxytag: member="Parser::ExpressionBitOr" ref="ad2cb2b5470a74173eccdb20cc6bdfddf" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionBitOr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a57e2db77309c6df2508f38d7f935d9ee"></a><!-- doxytag: member="Parser::ExpressionBitXor" ref="a57e2db77309c6df2508f38d7f935d9ee" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionBitXor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3b3599df4bb8c59218fd299a661779d6"></a><!-- doxytag: member="Parser::ExpressionCast" ref="a3b3599df4bb8c59218fd299a661779d6" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionCast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Analizuje wyrażenie rzutowania Analizuje wyrażenie w postaci int(sth);. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5c383f3014d2737ebfea44a6f375c51d"></a><!-- doxytag: member="Parser::ExpressionEqal" ref="a5c383f3014d2737ebfea44a6f375c51d" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionEqal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aeec4d840ac12160c5ff93848469f7ed0"></a><!-- doxytag: member="Parser::ExpressionLogAnd" ref="aeec4d840ac12160c5ff93848469f7ed0" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionLogAnd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c60f649aaae6d2d66247faf956ae6a9"></a><!-- doxytag: member="Parser::ExpressionLogOr" ref="a9c60f649aaae6d2d66247faf956ae6a9" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionLogOr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4dd52bb45a43fe93e5423fedee292b4a"></a><!-- doxytag: member="Parser::ExpressionMul" ref="a4dd52bb45a43fe93e5423fedee292b4a" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionMul </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a216b1d66d2802d0283b894fa267234cc"></a><!-- doxytag: member="Parser::ExpressionPostfix" ref="a216b1d66d2802d0283b894fa267234cc" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionPostfix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Analizuje wyrażenie postfiksowe (JESZCZE NIE GOTOWE). </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac0f2261d92c2b1bc1fc6117465737573"></a><!-- doxytag: member="Parser::ExpressionPow" ref="ac0f2261d92c2b1bc1fc6117465737573" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionPow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aed82062004e68738e24eb72de8fdbe30"></a><!-- doxytag: member="Parser::ExpressionPrimary" ref="aed82062004e68738e24eb72de8fdbe30" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionPrimary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Analizuje wyrażenia podstawowe. </p>
+<p>Podstaowym wyrażeniem jest literał, zmienna, wywołanie funkcji lub wyrażenie w nawiasach. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8125b294e11a4dbb8e77dbc0c401e910"></a><!-- doxytag: member="Parser::ExpressionRelation" ref="a8125b294e11a4dbb8e77dbc0c401e910" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionRelation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6431b4cb22f3ff9dc8ce46ca41343a06"></a><!-- doxytag: member="Parser::ExpressionShift" ref="a6431b4cb22f3ff9dc8ce46ca41343a06" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionShift </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja analizująca wyrażenie. </p>
+<p>Analizuje wyrażenie arytmetyczne, wywołując kolejne funkcje analizujące wyrażenie zachowując piorytet operatorów. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa3bb1cc3fdbc7bbfaefa6c616088e3ea"></a><!-- doxytag: member="Parser::ExpressionUnary" ref="aa3bb1cc3fdbc7bbfaefa6c616088e3ea" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_expression.html">DataStruct::Expression</a> * Parser::ExpressionUnary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Analizuje wyrażenie unarne. </p>
+<p>Analizuje wyrażenie z operatorem unarnym (np. negacja, preinkrementacja). </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa687c441261e85511f3a78d2a22de9ba"></a><!-- doxytag: member="Parser::Function" ref="aa687c441261e85511f3a78d2a22de9ba" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_function.html">DataStruct::Function</a> * Parser::Function </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Analizuje pojedynczą funkcję. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c134d0bd3c19ea0498a59d5a85278cd"></a><!-- doxytag: member="Parser::Program" ref="a9c134d0bd3c19ea0498a59d5a85278cd" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_program.html">DataStruct::Program</a> * Parser::Program </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Analizuje program. </p>
+<p>Analizuje cały program, który można wykonać lub zdebugować. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a730d4c0dab0bd56bda1152a3588bca5c"></a><!-- doxytag: member="Parser::Statement" ref="a730d4c0dab0bd56bda1152a3588bca5c" args="(Tokenizer &amp;tokenizer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_struct_1_1_statement.html">DataStruct::Statement</a> * Parser::Statement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tokenizer.html">Tokenizer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tokenizer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Analizuje pojedynczą instrukcję. </p>
+<p>Analizuje pojedyncze instrukcje, np. instrukcję warunkową, pętlę while, czy instukcję wyrażeniową. </p>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tokenizer</em>&nbsp;</td><td>Analizator składniowy z kodem programu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>Przyjaciele</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Wygenerowano Wed Aug 25 2010 19:55:06 dla SL/0 programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

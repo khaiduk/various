@@ -1,0 +1,23 @@
+Keys:
+
+n - new, empty map
+m - save map to edit.map file
+
+1 - car start pos 1
+2 - car start pos 2
+3 - props
+5 - checkpoints
+q - prev prop/checkpoint
+e - next prop/checkpoint
+= - add prop/checkpoint/reset car position
+- - delete prop/checkpoint
+w,s,a,d - move prop/car/checkpoint start pos
+r,f - up/down
+z,x - rotate about local <up> axis
+c,v - rotate about local <direction> axis
+
+4 - terrain
+w,s,a,d - change vertex
+r,f - up/down
+v - change tile look
+

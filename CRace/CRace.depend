@@ -1,0 +1,589 @@
+# depslib dependency file v1.0
+1306065882 source:d:\studia\programowanie proceduralne\projekt\crace\main.c
+	"common.h"
+	"game.h"
+
+1305028096 d:\studia\programowanie proceduralne\projekt\crace\vector.h
+	"common.h"
+
+1306250741 d:\studia\programowanie proceduralne\projekt\crace\model.h
+	"vector.h"
+	"texture.h"
+	"common.h"
+
+1301170852 source:h:\crace\main.c
+	<SDL/SDL.h>
+	<stdlib.h>
+	<stdio.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	"vector.h"
+	"model.h"
+	"car.h"
+	"camera.h"
+
+1301162092 h:\crace\vector.h
+	<math.h>
+	"common.h"
+
+1301168056 h:\crace\model.h
+	"vector.h"
+	"texture.h"
+	"common.h"
+
+1301158786 h:\crace\common.h
+
+1301152284 h:\crace\texture.h
+	<SDL/SDL.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	"common.h"
+
+1301169834 h:\crace\car.h
+	"vector.h"
+	"model.h"
+
+1301144534 h:\crace\camera.h
+	"vector.h"
+
+1305028218 d:\studia\programowanie proceduralne\projekt\crace\common.h
+	<SDL/SDL.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glext.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdint.h>
+
+1305028568 d:\studia\programowanie proceduralne\projekt\crace\texture.h
+	"common.h"
+
+1305989942 d:\studia\programowanie proceduralne\projekt\crace\car.h
+	"common.h"
+	"vector.h"
+	"model.h"
+	"physics.h"
+	"terrain.h"
+
+1305028112 d:\studia\programowanie proceduralne\projekt\crace\camera.h
+	"vector.h"
+
+1306254502 d:\studia\programowanie proceduralne\projekt\crace\gui.h
+	"common.h"
+	"texture.h"
+
+1301729684 source:h:\projekt\crace\main.c
+	"common.h"
+	"game.h"
+
+1301776222 h:\projekt\crace\common.h
+	<SDL/SDL.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glext.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdint.h>
+
+1301729684 h:\projekt\crace\vector.h
+	"common.h"
+
+1301729718 h:\projekt\crace\texture.h
+	"common.h"
+
+1301672486 h:\projekt\crace\model.h
+	"vector.h"
+	"texture.h"
+	"common.h"
+
+1301170982 h:\projekt\crace\car.h
+	"vector.h"
+	"model.h"
+
+1301144534 h:\projekt\crace\camera.h
+	"vector.h"
+
+1301727220 h:\projekt\crace\gui.h
+	"common.h"
+	"texture.h"
+
+1301777806 h:\projekt\crace\game.h
+	"common.h"
+	"vector.h"
+	"texture.h"
+	"model.h"
+	"car.h"
+	"camera.h"
+	"gui.h"
+
+1306069386 d:\studia\programowanie proceduralne\projekt\crace\game.h
+	"common.h"
+	"vector.h"
+	"texture.h"
+	"model.h"
+	"car.h"
+	"camera.h"
+	"gui.h"
+	"prop.h"
+	"checkpoint.h"
+	"terrain.h"
+
+1302357058 source:d:\documents and settings\karol\pulpit\z gwizdka\projekt\crace\main.c
+	"common.h"
+	"game.h"
+
+1302340511 d:\documents and settings\karol\pulpit\z gwizdka\projekt\crace\common.h
+	<SDL/SDL.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glext.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdint.h>
+
+1302430182 d:\documents and settings\karol\pulpit\z gwizdka\projekt\crace\game.h
+	"common.h"
+	"vector.h"
+	"texture.h"
+	"model.h"
+	"car.h"
+	"camera.h"
+	"gui.h"
+	"prop.h"
+
+1302297334 d:\documents and settings\karol\pulpit\z gwizdka\projekt\crace\vector.h
+	"common.h"
+
+1302383876 d:\documents and settings\karol\pulpit\z gwizdka\projekt\crace\texture.h
+	"common.h"
+
+1302383884 d:\documents and settings\karol\pulpit\z gwizdka\projekt\crace\model.h
+	"vector.h"
+	"texture.h"
+	"common.h"
+
+1302373724 d:\documents and settings\karol\pulpit\z gwizdka\projekt\crace\car.h
+	"vector.h"
+	"model.h"
+
+1302427652 d:\documents and settings\karol\pulpit\z gwizdka\projekt\crace\camera.h
+	"vector.h"
+
+1302383876 d:\documents and settings\karol\pulpit\z gwizdka\projekt\crace\gui.h
+	"common.h"
+	"texture.h"
+
+1302285434 d:\documents and settings\karol\pulpit\z gwizdka\projekt\crace\prop.h
+	"vector.h"
+	"model.h"
+
+1305975284 d:\studia\programowanie proceduralne\projekt\crace\prop.h
+	"vector.h"
+	"model.h"
+	"physics.h"
+
+1305028928 d:\studia\programowanie proceduralne\projekt\crace\checkpoint.h
+	"common.h"
+	"vector.h"
+
+1305028778 d:\studia\programowanie proceduralne\projekt\crace\physics.h
+	"common.h"
+	"vector.h"
+
+1303836710 d:\studia\programowanie proceduralne\projekt\crace\quaternion.h
+	"common.h"
+	"vector.h"
+
+1305892460 d:\studia\programowanie proceduralne\projekt\crace\terrain.h
+	"common.h"
+	"vector.h"
+	"texture.h"
+
+1305027794 source:d:\studia\programowanie proceduralne\projekt\crace\camera.c
+	"camera.h"
+
+1305028096 source:d:\studia\programowanie proceduralne\projekt\crace\vector.c
+	"vector.h"
+
+1305028164 source:d:\studia\programowanie proceduralne\projekt\crace\common.c
+	"common.h"
+
+1306270801 source:d:\studia\programowanie proceduralne\projekt\crace\car.c
+	"car.h"
+
+1306104142 source:d:\studia\programowanie proceduralne\projekt\crace\texture.c
+	"texture.h"
+
+1306250741 source:d:\studia\programowanie proceduralne\projekt\crace\model.c
+	"model.h"
+
+1305028712 source:d:\studia\programowanie proceduralne\projekt\crace\physics.c
+	"physics.h"
+
+1306064002 source:d:\studia\programowanie proceduralne\projekt\crace\terrain.c
+	"terrain.h"
+
+1305028916 source:d:\studia\programowanie proceduralne\projekt\crace\checkpoint.c
+	"checkpoint.h"
+
+1306254496 source:d:\studia\programowanie proceduralne\projekt\crace\gui.c
+	"gui.h"
+
+1305975324 source:d:\studia\programowanie proceduralne\projekt\crace\prop.c
+	"prop.h"
+
+1306268909 source:d:\studia\programowanie proceduralne\projekt\crace\game.c
+	"game.h"
+
+1305027794 source:d:\documents and settings\karol\pulpit\projekt\crace\camera.c
+	"camera.h"
+
+1306586711 d:\documents and settings\karol\pulpit\projekt\crace\camera.h
+	"common.h"
+	"vector.h"
+
+1306590804 d:\documents and settings\karol\pulpit\projekt\crace\vector.h
+	"common.h"
+
+1306585833 d:\documents and settings\karol\pulpit\projekt\crace\common.h
+	<SDL/SDL.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glext.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdint.h>
+
+1306606012 source:d:\documents and settings\karol\pulpit\projekt\crace\car.c
+	"car.h"
+
+1306602687 d:\documents and settings\karol\pulpit\projekt\crace\car.h
+	"common.h"
+	"vector.h"
+	"model.h"
+	"physics.h"
+	"terrain.h"
+
+1306590952 d:\documents and settings\karol\pulpit\projekt\crace\model.h
+	"vector.h"
+	"texture.h"
+	"common.h"
+
+1306509862 d:\documents and settings\karol\pulpit\projekt\crace\texture.h
+	"common.h"
+
+1306590952 d:\documents and settings\karol\pulpit\projekt\crace\physics.h
+	"common.h"
+	"vector.h"
+
+1305892460 d:\documents and settings\karol\pulpit\projekt\crace\terrain.h
+	"common.h"
+	"vector.h"
+	"texture.h"
+
+1306590804 source:d:\documents and settings\karol\pulpit\projekt\crace\checkpoint.c
+	"checkpoint.h"
+
+1306590804 d:\documents and settings\karol\pulpit\projekt\crace\checkpoint.h
+	"common.h"
+	"physics.h"
+	"vector.h"
+
+1306585919 source:d:\documents and settings\karol\pulpit\projekt\crace\common.c
+	"common.h"
+
+1306670358 source:d:\documents and settings\karol\pulpit\projekt\crace\game.c
+	"game.h"
+
+1306620770 d:\documents and settings\karol\pulpit\projekt\crace\game.h
+	"common.h"
+	"settings.h"
+	"vector.h"
+	"texture.h"
+	"model.h"
+	"car.h"
+	"camera.h"
+	"gui.h"
+	"prop.h"
+	"checkpoint.h"
+	"terrain.h"
+
+1306611334 d:\documents and settings\karol\pulpit\projekt\crace\gui.h
+	"common.h"
+	"texture.h"
+
+1306590952 d:\documents and settings\karol\pulpit\projekt\crace\prop.h
+	"vector.h"
+	"model.h"
+	"physics.h"
+
+1306611372 source:d:\documents and settings\karol\pulpit\projekt\crace\gui.c
+	"gui.h"
+
+1306065882 source:d:\documents and settings\karol\pulpit\projekt\crace\main.c
+	"common.h"
+	"game.h"
+
+1306590969 source:d:\documents and settings\karol\pulpit\projekt\crace\model.c
+	"model.h"
+
+1306590952 source:d:\documents and settings\karol\pulpit\projekt\crace\physics.c
+	"physics.h"
+
+1306590952 source:d:\documents and settings\karol\pulpit\projekt\crace\prop.c
+	"prop.h"
+
+1306064002 source:d:\documents and settings\karol\pulpit\projekt\crace\terrain.c
+	"terrain.h"
+
+1306590804 source:d:\documents and settings\karol\pulpit\projekt\crace\vector.c
+	"vector.h"
+
+1306509863 source:d:\documents and settings\karol\pulpit\projekt\crace\texture.c
+	"texture.h"
+
+1305027794 source:c:\users\karol\desktop\projekt\crace\camera.c
+	"camera.h"
+
+1306586712 c:\users\karol\desktop\projekt\crace\camera.h
+	"common.h"
+	"vector.h"
+
+1306590806 c:\users\karol\desktop\projekt\crace\vector.h
+	"common.h"
+
+1307009250 c:\users\karol\desktop\projekt\crace\common.h
+	<SDL/SDL.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glext.h>
+	<AL/al.h>
+	<AL/alc.h>
+	<AL/alut.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+
+1307461032 source:c:\users\karol\desktop\projekt\crace\car.c
+	"car.h"
+
+1307461032 c:\users\karol\desktop\projekt\crace\car.h
+	"common.h"
+	"vector.h"
+	"model.h"
+	"physics.h"
+	"terrain.h"
+
+1306590954 c:\users\karol\desktop\projekt\crace\model.h
+	"vector.h"
+	"texture.h"
+	"common.h"
+
+1306509864 c:\users\karol\desktop\projekt\crace\texture.h
+	"common.h"
+
+1306590954 c:\users\karol\desktop\projekt\crace\physics.h
+	"common.h"
+	"vector.h"
+
+1305892460 c:\users\karol\desktop\projekt\crace\terrain.h
+	"common.h"
+	"vector.h"
+	"texture.h"
+
+1306590806 source:c:\users\karol\desktop\projekt\crace\checkpoint.c
+	"checkpoint.h"
+
+1306590806 c:\users\karol\desktop\projekt\crace\checkpoint.h
+	"common.h"
+	"physics.h"
+	"vector.h"
+
+1306585920 source:c:\users\karol\desktop\projekt\crace\common.c
+	"common.h"
+
+1307461004 source:c:\users\karol\desktop\projekt\crace\game.c
+	"game.h"
+
+1307461063 c:\users\karol\desktop\projekt\crace\game.h
+	"common.h"
+	"settings.h"
+	"vector.h"
+	"texture.h"
+	"sound.h"
+	"model.h"
+	"car.h"
+	"camera.h"
+	"gui.h"
+	"prop.h"
+	"checkpoint.h"
+	"terrain.h"
+
+1306611334 c:\users\karol\desktop\projekt\crace\gui.h
+	"common.h"
+	"texture.h"
+
+1306590954 c:\users\karol\desktop\projekt\crace\prop.h
+	"vector.h"
+	"model.h"
+	"physics.h"
+
+1306611374 source:c:\users\karol\desktop\projekt\crace\gui.c
+	"gui.h"
+
+1306065882 source:c:\users\karol\desktop\projekt\crace\main.c
+	"common.h"
+	"game.h"
+
+1306939093 source:c:\users\karol\desktop\projekt\crace\model.c
+	"model.h"
+
+1306590954 source:c:\users\karol\desktop\projekt\crace\physics.c
+	"physics.h"
+
+1306590954 source:c:\users\karol\desktop\projekt\crace\prop.c
+	"prop.h"
+
+1306064002 source:c:\users\karol\desktop\projekt\crace\terrain.c
+	"terrain.h"
+
+1306938929 source:c:\users\karol\desktop\projekt\crace\texture.c
+	"texture.h"
+
+1306590806 source:c:\users\karol\desktop\projekt\crace\vector.c
+	"vector.h"
+
+1305027794 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\camera.c
+	"camera.h"
+
+1305028112 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\camera.h
+	"vector.h"
+
+1305028096 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\vector.h
+	"common.h"
+
+1305028218 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\common.h
+	<SDL/SDL.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glext.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdint.h>
+
+1306270801 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\car.c
+	"car.h"
+
+1305989942 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\car.h
+	"common.h"
+	"vector.h"
+	"model.h"
+	"physics.h"
+	"terrain.h"
+
+1306250741 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\model.h
+	"vector.h"
+	"texture.h"
+	"common.h"
+
+1305028568 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\texture.h
+	"common.h"
+
+1305028778 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\physics.h
+	"common.h"
+	"vector.h"
+
+1305892460 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\terrain.h
+	"common.h"
+	"vector.h"
+	"texture.h"
+
+1305028916 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\checkpoint.c
+	"checkpoint.h"
+
+1305028928 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\checkpoint.h
+	"common.h"
+	"vector.h"
+
+1305028164 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\common.c
+	"common.h"
+
+1306269111 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\game.c
+	"game.h"
+
+1306069386 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\game.h
+	"common.h"
+	"vector.h"
+	"texture.h"
+	"model.h"
+	"car.h"
+	"camera.h"
+	"gui.h"
+	"prop.h"
+	"checkpoint.h"
+	"terrain.h"
+
+1306254502 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\gui.h
+	"common.h"
+	"texture.h"
+
+1305975284 c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\prop.h
+	"vector.h"
+	"model.h"
+	"physics.h"
+
+1306254496 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\gui.c
+	"gui.h"
+
+1306065882 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\main.c
+	"common.h"
+	"game.h"
+
+1306250741 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\model.c
+	"model.h"
+
+1305028712 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\physics.c
+	"physics.h"
+
+1305975324 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\prop.c
+	"prop.h"
+
+1306064002 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\terrain.c
+	"terrain.h"
+
+1306104142 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\texture.c
+	"texture.h"
+
+1305028096 source:c:\___dysk d___\studia\programowanie proceduralne\projekt\crace\vector.c
+	"vector.h"
+
+1306618563 source:d:\documents and settings\karol\pulpit\projekt\crace\settings.c
+	"settings.h"
+
+1306618494 d:\documents and settings\karol\pulpit\projekt\crace\settings.h
+	"common.h"
+
+1306618496 c:\users\karol\desktop\projekt\crace\settings.h
+	"common.h"
+
+1306618564 source:c:\users\karol\desktop\projekt\crace\settings.c
+	"settings.h"
+
+1306944180 source:c:\users\karol\desktop\projekt\crace\sound.c
+	"sound.h"
+
+1306877190 c:\users\karol\desktop\projekt\crace\sound.h
+	"common.h"
+	"settings.h"
+

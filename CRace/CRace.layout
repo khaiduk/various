@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="camera.c" open="0" top="0" tabpos="3">
+		<Cursor position="21" topLine="0" />
+	</File>
+	<File name="camera.h" open="0" top="0" tabpos="8">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="car.c" open="0" top="0" tabpos="10">
+		<Cursor position="2171" topLine="72" />
+	</File>
+	<File name="car.h" open="0" top="0" tabpos="6">
+		<Cursor position="67" topLine="0" />
+	</File>
+	<File name="checkpoint.c" open="0" top="0" tabpos="5">
+		<Cursor position="27" topLine="0" />
+	</File>
+	<File name="checkpoint.h" open="0" top="0" tabpos="5">
+		<Cursor position="229" topLine="0" />
+	</File>
+	<File name="common.c" open="0" top="0" tabpos="12">
+		<Cursor position="21" topLine="0" />
+	</File>
+	<File name="common.h" open="0" top="0" tabpos="2">
+		<Cursor position="126" topLine="10" />
+	</File>
+	<File name="game.c" open="1" top="1" tabpos="9">
+		<Cursor position="231" topLine="10" />
+	</File>
+	<File name="game.h" open="1" top="0" tabpos="1">
+		<Cursor position="1344" topLine="43" />
+	</File>
+	<File name="gui.c" open="1" top="0" tabpos="7">
+		<Cursor position="5556" topLine="183" />
+	</File>
+	<File name="gui.h" open="1" top="0" tabpos="6">
+		<Cursor position="139" topLine="0" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="8">
+		<Cursor position="216" topLine="12" />
+	</File>
+	<File name="model.c" open="0" top="0" tabpos="9">
+		<Cursor position="6848" topLine="209" />
+	</File>
+	<File name="model.h" open="1" top="0" tabpos="5">
+		<Cursor position="455" topLine="6" />
+	</File>
+	<File name="physics.c" open="0" top="0" tabpos="7">
+		<Cursor position="17473" topLine="0" />
+	</File>
+	<File name="physics.h" open="0" top="0" tabpos="3">
+		<Cursor position="796" topLine="22" />
+	</File>
+	<File name="prop.c" open="0" top="0" tabpos="0">
+		<Cursor position="45" topLine="0" />
+	</File>
+	<File name="prop.h" open="0" top="0" tabpos="11">
+		<Cursor position="287" topLine="3" />
+	</File>
+	<File name="settings.c" open="0" top="0" tabpos="3">
+		<Cursor position="1031" topLine="0" />
+	</File>
+	<File name="settings.h" open="0" top="0" tabpos="2">
+		<Cursor position="318" topLine="5" />
+	</File>
+	<File name="sound.c" open="0" top="0" tabpos="1">
+		<Cursor position="3383" topLine="100" />
+	</File>
+	<File name="sound.h" open="1" top="0" tabpos="2">
+		<Cursor position="161" topLine="6" />
+	</File>
+	<File name="terrain.c" open="0" top="0" tabpos="7">
+		<Cursor position="1426" topLine="22" />
+	</File>
+	<File name="terrain.h" open="1" top="0" tabpos="4">
+		<Cursor position="266" topLine="0" />
+	</File>
+	<File name="texture.c" open="0" top="0" tabpos="10">
+		<Cursor position="2547" topLine="42" />
+	</File>
+	<File name="texture.h" open="1" top="0" tabpos="3">
+		<Cursor position="164" topLine="0" />
+	</File>
+	<File name="vector.c" open="0" top="0" tabpos="8">
+		<Cursor position="2387" topLine="81" />
+	</File>
+	<File name="vector.h" open="0" top="0" tabpos="3">
+		<Cursor position="157" topLine="6" />
+	</File>
+</CodeBlocks_layout_file>

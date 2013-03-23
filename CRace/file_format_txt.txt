@@ -1,0 +1,123 @@
+==FILE FORMATS==
+
+<___:s> - string newline terminated eg. 'alamakota\n'
+<___:v> - vector eg. 13.5 1.5 1.5e20
+<___:f> - float eg. 12.6
+<___:d> - decimal eg. 123
++++settings+++
+<windowWidth:d> x <windowHeight:d> x <windowBits:d>
+<fullscreen:d>
+<musicVolmue:d> <fxVolmue:d> 
+<key_down:d> <key_up:d> <key_left:d> <key_right:d>
+<key_down:d> <key_up:d> <key_left:d> <key_right:d>
+
+eg.
+800 x 600 x 32
+0
+100 80
+274 273 276 275
+115 119 97 100
++++game+++
+<gameType:d>
+<car_appearance:s>
+<car_prototype:d>
+<map_filename:s>
+<car1_pos:v> <car1_dir:v> <car1_up:v> <car1_velo:v> <car1_ang_velo:v>
+<raceTime:f> <currentTime:f> <bestTime:f> <lap:d> <nextCheckpoint:d>
+<car2_pos:v> <car2_dir:v> <car2_up:v> <car2_velo:v> <car2_ang_velo:v>
+<raceTime:f> <currentTime:f> <bestTime:f> <lap:d> <nextCheckpoint:d>
+
+eg.
+0
+maluch.obj
+1
+mapka.map
+0.0 2.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+0.0 2.0 4.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+
++++cars+++
+<cars_num:d>
+{
+<car_name:s>
+<halfsize:v> <wheels_offset:v>
+}
+
++++map+++
+
+<car1_pos:v> <car1_dir:v> <car1_up:v>
+<car2_pos:v> <car2_dir:v> <car2_up:v>
+<prop_num:d>
+{
+<prop_model:s>
+<prop_pos:v> <prop_dir:v> <prop_up:v>
+<prop_halfsize:v>
+}
+<laps_num:d>
+<checkpoint_num:d>
+{
+<checkpoint_position:v> <Dcheckpoint_direction:v>
+}
+{
+<heightmap:s>
+}
+{
+<tilemap:s>
+}
+
+eg:
+0.0 2.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0
+0.0 2.0 4.0 1.0 0.0 0.0 0.0 1.0 0.0
+2
+prop1.obj
+3.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0
+5.0 3.0 2.0
+prop2.obj
+10.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0
+4.0 4.0 4.0
+5
+4
+0.0 2.0 2.0 1.0 0.0 0.0
+5.0 2.0 2.0 1.0 0.0 0.0
+10.0 2.0 2.0 1.0 0.0 0.0
+15.0 2.0 2.0 1.0 0.0 0.0
+********************
+********************
+********************
+********************
+****#############***
+****##---------##***
+****#|#########|#***
+****#|#*******#|#***
+****#|#*******#|#***
+****#|#########|#***
+****##---------##***
+****#############***
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+%%^&&%^&&#%%^&&%^&&#
+
